@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-12T22:46:23.682849",
+    "total_orders": 628,
+    "unique_students": 606,
+    "attribution_window_days": 21,
+    "baseline_daily_revenue_rub": 54482.5
+  },
+  "campaigns_performance": [
+    {
+      "campaign_id": "camp_bigtech_internships",
+      "campaign_name": "Кампания «Стажировки и отборы в BigTech»",
+      "target_product": "Курсы ПРО & Разборы отборов",
+      "budget_allocated_rub": 90000.0,
+      "attributed_orders": 201,
+      "attributed_revenue_rub": 1981092.0,
+      "aov_rub": 9856.18,
+      "romi_attr_%": 2101.2,
+      "incremental_revenue_rub": 1599714.5,
+      "romi_inc_%": 1677.5,
+      "empirical_multiplier": 17.7746
+    },
+    {
+      "campaign_id": "camp_pro_ai_ml",
+      "campaign_name": "Кампания «Флагманы AI/ML и ПРО»",
+      "target_product": "Линейка ПРО и AI-агенты",
+      "budget_allocated_rub": 120000.0,
+      "attributed_orders": 153,
+      "attributed_revenue_rub": 1524933.0,
+      "aov_rub": 9966.88,
+      "romi_attr_%": 1170.8,
+      "incremental_revenue_rub": 1034590.5,
+      "romi_inc_%": 762.2,
+      "empirical_multiplier": 8.6216
+    },
+    {
+      "campaign_id": "camp_start_discount_55",
+      "campaign_name": "Кампания «Финальная распродажа СТАРТ -55%»",
+      "target_product": "Линейка СТАРТ",
+      "budget_allocated_rub": 45000.0,
+      "attributed_orders": 144,
+      "attributed_revenue_rub": 1101026.67,
+      "aov_rub": 7646.02,
+      "romi_attr_%": 2346.7,
+      "incremental_revenue_rub": 828614.17,
+      "romi_inc_%": 1741.4,
+      "empirical_multiplier": 18.4136
+    },
+    {
+      "campaign_id": "camp_free_analytics_nosql",
+      "campaign_name": "Кампания «Лид-магниты / Интенсивы (Аналитика вне SQL)»",
+      "target_product": "Аналитика вне SQL / Хакатон",
+      "budget_allocated_rub": 30000.0,
+      "attributed_orders": 40,
+      "attributed_revenue_rub": 441675.0,
+      "aov_rub": 11041.88,
+      "romi_attr_%": 1372.2,
+      "incremental_revenue_rub": 223745.0,
+      "romi_inc_%": 645.8,
+      "empirical_multiplier": 7.4582
+    },
+    {
+      "campaign_id": "camp_warmup",
+      "campaign_name": "Прогревы и экспертный контент",
+      "target_product": "Бренд / Карьерные гайды",
+      "budget_allocated_rub": 15000.0,
+      "attributed_orders": 90,
+      "attributed_revenue_rub": 855945.0,
+      "aov_rub": 9510.5,
+      "romi_attr_%": 5606.3,
+      "incremental_revenue_rub": 0.0,
+      "romi_inc_%": -100.0,
+      "empirical_multiplier": 0.0
+    }
+  ],
+  "attribution_comparison": [
+    {
+      "campaign_id": "camp_bigtech_internships",
+      "revenue_last_touch": 1981092.0,
+      "revenue_first_touch": 1743360.96,
+      "revenue_linear": 1862226.48,
+      "revenue_time_decay": 1941470.16
+    },
+    {
+      "campaign_id": "camp_pro_ai_ml",
+      "revenue_last_touch": 1524933.0,
+      "revenue_first_touch": 1402938.36,
+      "revenue_linear": 1463935.68,
+      "revenue_time_decay": 1509683.67
+    },
+    {
+      "campaign_id": "camp_start_discount_55",
+      "revenue_last_touch": 1101026.67,
+      "revenue_first_touch": 1045975.34,
+      "revenue_linear": 1079006.14,
+      "revenue_time_decay": 1090016.4
+    },
+    {
+      "campaign_id": "camp_free_analytics_nosql",
+      "revenue_last_touch": 441675.0,
+      "revenue_first_touch": 596261.25,
+      "revenue_linear": 507926.25,
+      "revenue_time_decay": 463758.75
+    },
+    {
+      "campaign_id": "camp_warmup",
+      "revenue_last_touch": 855945.0,
+      "revenue_first_touch": 1241120.25,
+      "revenue_linear": 1027134.0,
+      "revenue_time_decay": 873063.9
+    }
+  ],
+  "empirical_multipliers": {
+    "camp_bigtech_internships": 17.7746,
+    "camp_pro_ai_ml": 8.6216,
+    "camp_start_discount_55": 18.4136,
+    "camp_free_analytics_nosql": 7.4582,
+    "camp_warmup": 0.0
+  },
+  "backtest": {
+    "test_period_days": 13,
+    "total_test_actual_revenue": 2694632.0,
+    "naive_baseline": {
+      "mae_rub": 85978.68,
+      "wape_%": 41.5
+    },
+    "factor_model": {
+      "mae_rub": 282422.5,
+      "wape_%": 136.3
+    }
+  },
+  "data_provenance": {
+    "real_sources": [
+      "orders.csv (628 оплат)",
+      "posts.csv (45 постов с охватами)"
+    ],
+    "synthetic_sources": [
+      "leads.csv (симуляция 70% stitched / 30% unstitched для проверки окна 21 день)"
+    ]
+  }
+}

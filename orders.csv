@@ -1,0 +1,629 @@
+﻿student_id;order_timestamp;courses_list;courses_count;amount;order_id;user_id;is_bundle;campaign_id;attributed_post_id
+1;2026-09-04 19:30:57;Аналитика старт;1;8950.0;ord_0001;usr_0001;False;camp_bigtech_internships;1878
+2;2026-09-05 16:22:48;ML про;1;8950.0;ord_0002;usr_0002;False;camp_bigtech_internships;1878
+3;2026-09-03 22:47:02;АВ тестам;1;5975.0;ord_0003;usr_0003;False;camp_bigtech_internships;1878
+4;2026-08-31 15:42:34;AI агенты;1;8950.0;ord_0004;usr_0004;False;camp_bigtech_internships;1872
+5;2026-08-22 16:19:00;ML про;1;5750.0;ord_0005;usr_0005;False;camp_pro_ai_ml;1859
+6;2026-09-02 19:16:28;Аналитика про;1;8450.0;ord_0006;usr_0006;False;camp_bigtech_internships;1877
+7;2026-08-08 14:07:56;Backend старт;1;4950.0;ord_0007;usr_0007;False;camp_start_discount_55;1833
+8;2026-08-08 16:25:39;АВ тестам, Алгоритмы;2;8990.0;ord_0008;usr_0008;True;camp_start_discount_55;1833
+9;2026-09-03 14:55:45;Аналитика про;1;8950.0;ord_0009;usr_0009;False;camp_bigtech_internships;1877
+10;2026-09-06 16:25:37;Backend про;1;8450.0;ord_0010;usr_0010;False;camp_bigtech_internships;1881
+11;2026-08-27 20:09:27;ML старт;1;6975.0;ord_0011;usr_0011;False;camp_pro_ai_ml;1869
+12;2026-08-09 16:52:01;Backend старт;1;6490.0;ord_0012;usr_0012;False;camp_start_discount_55;1836
+13;2026-09-07 07:54:24;AI агенты;1;8950.0;ord_0013;usr_0013;False;camp_free_analytics_nosql;1887
+14;2026-08-30 23:52:21;AI агенты;1;8950.0;ord_0014;usr_0014;False;camp_pro_ai_ml;1874
+15;2026-09-04 15:26:00;Аналитика про;1;8450.0;ord_0015;usr_0015;False;camp_bigtech_internships;1878
+16;2026-08-10 16:56:42;ML старт, Алгоритмы старт;2;9900.0;ord_0016;usr_0016;True;camp_start_discount_55;1838
+17;2026-08-22 17:01:20;Алгоритмы;1;9950.0;ord_0017;usr_0017;False;camp_pro_ai_ml;1859
+18;2026-09-05 14:29:29;Алгоритмы про;1;8950.0;ord_0018;usr_0018;False;camp_bigtech_internships;1878
+19;2026-08-09 11:01:50;Алгоритмы старт, Аналитика старт;2;9900.0;ord_0019;usr_0019;True;camp_start_discount_55;1833
+20;2026-09-06 11:07:00;Аналитика про, Аналитика старт;2;14950.0;ord_0020;usr_0020;True;camp_bigtech_internships;1878
+21;2026-08-10 16:29:36;Алгоритмы старт, Аналитика старт;2;9900.0;ord_0021;usr_0021;True;camp_start_discount_55;1838
+22;2026-09-06 14:41:56;ML про;1;8450.0;ord_0022;usr_0022;False;camp_bigtech_internships;1880
+23;2026-09-06 15:39:44;ML старт;1;2237.5;ord_0023;usr_0023;False;camp_bigtech_internships;1881
+24;2026-09-05 18:23:21;ML про;1;8950.0;ord_0024;usr_0024;False;camp_bigtech_internships;1878
+25;2026-08-30 18:34:15;ML про;1;8450.0;ord_0025;usr_0025;False;camp_pro_ai_ml;1874
+26;2026-08-08 09:23:01;Backend старт;1;6490.0;ord_0026;usr_0026;False;camp_start_discount_55;1833
+26;2026-08-31 14:03:44;Backend про, Дискретка;2;17950.0;ord_0027;usr_0026;True;camp_bigtech_internships;1872
+27;2026-08-29 14:47:39;ML про;1;8950.0;ord_0028;usr_0027;False;camp_pro_ai_ml;1869
+28;2026-09-04 15:15:34;Аналитика про, Аналитика старт;2;14950.0;ord_0029;usr_0028;True;camp_bigtech_internships;1878
+29;2026-08-28 18:20:56;Backend старт;1;8450.0;ord_0030;usr_0029;False;camp_pro_ai_ml;1869
+30;2026-08-23 10:06:51;ML про;1;8950.0;ord_0031;usr_0030;False;camp_pro_ai_ml;1859
+31;2026-09-05 11:00:21;ML про;1;7475.0;ord_0032;usr_0031;False;camp_bigtech_internships;1878
+32;2026-08-09 04:36:11;ML старт;1;6490.0;ord_0033;usr_0032;False;camp_start_discount_55;1833
+33;2026-08-08 16:26:36;Backend старт, Алгоритмы старт;2;9990.0;ord_0034;usr_0033;True;camp_start_discount_55;1833
+34;2026-09-01 17:23:37;Аналитика про;1;8945.0;ord_0035;usr_0034;False;camp_bigtech_internships;1875
+35;2026-09-02 22:38:59;Backend про;1;4225.0;ord_0036;usr_0035;False;camp_bigtech_internships;1877
+36;2026-09-09 19:26:20;Алгоритмы, Дискретка, Линейная алгебра, Мат анализ, Теория вероятностей;5;44750.0;ord_0037;usr_0036;True;camp_free_analytics_nosql;1893
+37;2026-09-02 04:13:14;Backend про;1;5750.0;ord_0038;usr_0037;False;camp_bigtech_internships;1875
+38;2026-08-09 12:15:31;Аналитика старт;1;6490.0;ord_0039;usr_0038;False;camp_start_discount_55;1833
+39;2026-08-27 17:02:28;Мат анализ;1;9950.0;ord_0040;usr_0039;False;camp_pro_ai_ml;1869
+40;2026-08-09 16:36:02;Аналитика старт;1;6490.0;ord_0041;usr_0040;False;camp_start_discount_55;1836
+41;2026-08-12 10:22:39;ML старт;1;6500.0;ord_0042;usr_0041;False;camp_warmup;1843
+42;2026-09-06 11:42:46;ML про;1;8450.0;ord_0043;usr_0042;False;camp_bigtech_internships;1878
+43;2026-09-05 07:16:30;АВ тестам, Аналитика старт;2;12950.0;ord_0044;usr_0043;True;camp_bigtech_internships;1878
+44;2026-09-06 12:29:18;AI агенты;1;6975.0;ord_0045;usr_0044;False;camp_bigtech_internships;1880
+45;2026-08-14 10:04:52;Алгоритмы;1;5750.0;ord_0046;usr_0045;False;camp_warmup;1846
+46;2026-08-12 05:13:04;К ВУЗу;1;6450.0;ord_0047;usr_0046;False;camp_warmup;1843
+47;2026-08-08 12:24:55;ML старт, Алгоритмы старт;2;9990.0;ord_0048;usr_0047;True;camp_start_discount_55;1833
+48;2026-09-05 14:24:29;Backend про;1;8950.0;ord_0049;usr_0048;False;camp_bigtech_internships;1878
+49;2026-09-06 14:51:02;AI агенты, Backend про;2;14950.0;ord_0050;usr_0049;True;camp_bigtech_internships;1880
+50;2026-09-02 10:32:55;Алгоритмы старт;1;8950.0;ord_0051;usr_0050;False;camp_bigtech_internships;1875
+51;2026-09-06 15:46:24;ML про;1;2237.5;ord_0052;usr_0051;False;camp_bigtech_internships;1881
+52;2026-08-10 18:12:59;К ВУЗу;1;6450.0;ord_0053;usr_0052;False;camp_start_discount_55;1838
+53;2026-08-09 13:57:35;ML старт;1;4950.0;ord_0054;usr_0053;False;camp_start_discount_55;1836
+54;2026-08-08 12:39:51;Алгоритмы старт;1;6490.0;ord_0055;usr_0054;False;camp_start_discount_55;1833
+55;2026-09-06 15:35:13;AI агенты;1;2237.5;ord_0056;usr_0055;False;camp_bigtech_internships;1881
+56;2026-09-06 12:12:33;Backend старт;1;7475.0;ord_0057;usr_0056;False;camp_bigtech_internships;1880
+57;2026-08-10 00:14:10;ML старт;1;4950.0;ord_0058;usr_0057;False;camp_start_discount_55;1837
+58;2026-08-09 16:12:46;Backend старт, ML старт, Алгоритмы старт;3;16390.0;ord_0059;usr_0058;True;camp_start_discount_55;1836
+59;2026-09-06 13:32:21;ML про;1;8950.0;ord_0060;usr_0059;False;camp_bigtech_internships;1880
+60;2026-09-05 19:44:33;ML про;1;8950.0;ord_0061;usr_0060;False;camp_bigtech_internships;1878
+61;2026-08-27 19:44:33;ML про, ML старт;2;13950.0;ord_0062;usr_0061;True;camp_pro_ai_ml;1869
+62;2026-08-09 18:47:09;Backend старт, Алгоритмы старт;2;9990.0;ord_0063;usr_0062;True;camp_start_discount_55;1837
+63;2026-08-09 19:29:08;Data Engenering, Data Science;2;12900.0;ord_0064;usr_0063;True;camp_start_discount_55;1837
+63;2026-09-07 05:24:57;Алгоритмы про;1;8950.0;ord_0065;usr_0063;False;camp_free_analytics_nosql;1887
+64;2026-08-09 14:45:05;Алгоритмы;1;4995.0;ord_0066;usr_0064;False;camp_start_discount_55;1836
+65;2026-08-09 18:45:20;Аналитика старт;1;6490.0;ord_0067;usr_0065;False;camp_start_discount_55;1837
+66;2026-08-13 05:36:55;Алгоритмы старт;1;8745.0;ord_0068;usr_0066;False;camp_warmup;1844
+67;2026-08-10 18:01:06;Аналитика старт;1;6490.0;ord_0069;usr_0067;False;camp_start_discount_55;1838
+67;2026-09-05 17:04:40;ML про;1;8950.0;ord_0070;usr_0067;False;camp_bigtech_internships;1878
+68;2026-09-08 17:53:12;Алгоритмы про, Алгоритмы старт;2;15000.0;ord_0071;usr_0068;True;camp_free_analytics_nosql;1893
+69;2026-08-22 04:22:43;К ВУЗу;1;6950.0;ord_0072;usr_0069;False;camp_pro_ai_ml;1859
+70;2026-08-18 19:10:04;Аналитика старт;1;8475.0;ord_0073;usr_0070;False;camp_warmup;1855
+71;2026-08-23 14:57:08;Алгоритмы;1;8450.0;ord_0074;usr_0071;False;camp_pro_ai_ml;1859
+72;2026-09-07 19:19:58;AI агенты, ML про;2;13950.0;ord_0075;usr_0072;True;camp_free_analytics_nosql;1893
+73;2026-08-08 20:05:40;Алгоритмы старт;1;4995.0;ord_0076;usr_0073;False;camp_start_discount_55;1833
+74;2026-09-06 10:34:28;AI агенты;1;8450.0;ord_0077;usr_0074;False;camp_bigtech_internships;1878
+75;2026-08-18 18:53:33;Аналитика про, Аналитика старт;2;16950.0;ord_0078;usr_0075;True;camp_warmup;1854
+76;2026-08-30 14:48:44;Алгоритмы про, Аналитика про;2;13950.0;ord_0079;usr_0076;True;camp_pro_ai_ml;1869
+77;2026-08-31 17:54:30;Аналитика про;1;8450.0;ord_0080;usr_0077;False;camp_bigtech_internships;1875
+78;2026-09-08 05:10:30;Data Science;1;6950.0;ord_0081;usr_0078;False;camp_free_analytics_nosql;1893
+79;2026-08-14 04:09:52;Теория вероятностей;1;9950.0;ord_0082;usr_0079;False;camp_warmup;1846
+80;2026-09-09 04:53:08;ML про;1;6975.0;ord_0083;usr_0080;False;camp_free_analytics_nosql;1893
+81;2026-08-30 13:44:26;AI агенты;1;8450.0;ord_0084;usr_0081;False;camp_pro_ai_ml;1869
+82;2026-08-11 12:46:14;Аналитика про, Аналитика старт;2;6490.0;ord_0085;usr_0082;True;camp_start_discount_55;1840
+83;2026-08-10 07:52:44;Аналитика старт;1;6490.0;ord_0086;usr_0083;False;camp_start_discount_55;1837
+84;2026-08-09 19:07:32;Backend старт;1;6490.0;ord_0087;usr_0084;False;camp_start_discount_55;1837
+85;2026-08-24 15:57:32;Аналитика про;1;8950.0;ord_0088;usr_0085;False;camp_pro_ai_ml;1859
+86;2026-08-10 16:16:30;Алгоритмы старт;1;4950.0;ord_0089;usr_0086;False;camp_start_discount_55;1837
+87;2026-08-22 13:23:20;Алгоритмы про;1;7475.0;ord_0090;usr_0087;False;camp_pro_ai_ml;1859
+88;2026-09-01 19:27:16;AI агенты;1;8950.0;ord_0091;usr_0088;False;camp_bigtech_internships;1875
+89;2026-08-09 10:44:19;Алгоритмы;1;9900.0;ord_0092;usr_0089;False;camp_start_discount_55;1833
+90;2026-08-31 01:05:18;Алгоритмы старт;1;6975.0;ord_0093;usr_0090;False;camp_bigtech_internships;1872
+91;2026-08-24 00:44:40;ML старт;1;8950.0;ord_0094;usr_0091;False;camp_pro_ai_ml;1859
+92;2026-08-21 15:14:39;Линейная алгебра;1;9950.0;ord_0095;usr_0092;False;camp_warmup;1857
+93;2026-08-10 05:56:12;К ВУЗу;1;6950.0;ord_0096;usr_0093;False;camp_start_discount_55;1837
+94;2026-09-04 18:49:47;Backend про;1;8950.0;ord_0097;usr_0094;False;camp_bigtech_internships;1878
+95;2026-08-23 19:08:11;AI агенты, Аналитика про;2;14950.0;ord_0098;usr_0095;True;camp_pro_ai_ml;1859
+96;2026-08-09 16:21:43;Аналитика старт;1;6490.0;ord_0099;usr_0096;False;camp_start_discount_55;1836
+97;2026-09-06 17:27:55;Backend про;1;8950.0;ord_0100;usr_0097;False;camp_bigtech_internships;1881
+98;2026-08-23 14:14:48;Аналитика про, Аналитика старт;2;14950.0;ord_0101;usr_0098;True;camp_pro_ai_ml;1859
+99;2026-08-29 19:35:36;AI агенты;1;8450.0;ord_0102;usr_0099;False;camp_pro_ai_ml;1869
+100;2026-09-07 09:30:42;Backend старт;1;8950.0;ord_0103;usr_0100;False;camp_free_analytics_nosql;1887
+101;2026-08-20 17:34:00;Алгоритмы старт;1;8745.0;ord_0104;usr_0101;False;camp_warmup;1856
+102;2026-09-07 12:59:48;AI агенты, ML про;2;12950.0;ord_0105;usr_0102;True;camp_free_analytics_nosql;1887
+103;2026-08-09 18:46:42;Аналитика старт;1;6490.0;ord_0106;usr_0103;False;camp_start_discount_55;1837
+104;2026-08-23 21:00:30;AI агенты, ML про;2;14950.0;ord_0107;usr_0104;True;camp_pro_ai_ml;1859
+105;2026-09-06 11:55:22;Аналитика про;1;8950.0;ord_0108;usr_0105;False;camp_bigtech_internships;1878
+106;2026-08-10 10:53:02;Backend старт, Алгоритмы старт;2;9900.0;ord_0109;usr_0106;True;camp_start_discount_55;1837
+107;2026-08-23 18:28:17;AI агенты, Аналитика про;2;13950.0;ord_0110;usr_0107;True;camp_pro_ai_ml;1859
+108;2026-09-09 04:53:08;AI агенты;1;6975.0;ord_0111;usr_0108;False;camp_free_analytics_nosql;1893
+109;2026-09-05 17:57:36;ML про;1;8950.0;ord_0112;usr_0109;False;camp_bigtech_internships;1878
+110;2026-09-07 10:27:06;AI агенты;1;8950.0;ord_0113;usr_0110;False;camp_free_analytics_nosql;1887
+111;2026-08-24 16:49:26;Аналитика про;1;8950.0;ord_0114;usr_0111;False;camp_pro_ai_ml;1859
+112;2026-08-11 18:41:42;ML про, ML старт;2;16950.0;ord_0115;usr_0112;True;camp_start_discount_55;1840
+113;2026-09-06 15:14:57;Аналитика про;1;8950.0;ord_0116;usr_0113;False;camp_bigtech_internships;1881
+114;2026-09-01 19:16:56;AI агенты, ML про;2;13950.0;ord_0117;usr_0114;True;camp_bigtech_internships;1875
+115;2026-09-01 13:09:50;Аналитика про;1;8945.0;ord_0118;usr_0115;False;camp_bigtech_internships;1875
+116;2026-08-25 10:01:02;АВ тестам, Аналитика про;2;14950.0;ord_0119;usr_0116;True;camp_pro_ai_ml;1859
+117;2026-09-05 12:34:35;Аналитика про;1;8450.0;ord_0120;usr_0117;False;camp_bigtech_internships;1878
+118;2026-08-23 08:24:45;Backend про;1;8450.0;ord_0121;usr_0118;False;camp_pro_ai_ml;1859
+119;2026-09-07 11:34:36;Алгоритмы про;1;8950.0;ord_0122;usr_0119;False;camp_free_analytics_nosql;1887
+120;2026-08-08 19:28:26;Аналитика старт;1;6490.0;ord_0123;usr_0120;False;camp_start_discount_55;1833
+121;2026-08-25 11:38:56;AI агенты;1;8950.0;ord_0124;usr_0121;False;camp_pro_ai_ml;1859
+122;2026-08-27 20:55:44;ML про, ML старт;2;14950.0;ord_0125;usr_0122;True;camp_pro_ai_ml;1869
+123;2026-09-09 16:23:01;Data Science;1;6450.0;ord_0126;usr_0123;False;camp_free_analytics_nosql;1893
+124;2026-09-04 06:34:32;Линейная алгебра;1;9950.0;ord_0127;usr_0124;False;camp_bigtech_internships;1878
+125;2026-09-07 08:46:37;ML про;1;8950.0;ord_0128;usr_0125;False;camp_free_analytics_nosql;1887
+126;2026-08-05 13:22:41;ML старт;1;8745.0;ord_0129;usr_0126;False;camp_warmup;1829
+127;2026-09-05 17:27:41;ML про;1;8950.0;ord_0130;usr_0127;False;camp_bigtech_internships;1878
+128;2026-09-02 11:55:47;Аналитика про;1;8945.0;ord_0131;usr_0128;False;camp_bigtech_internships;1875
+129;2026-08-09 10:56:45;Аналитика старт;1;6490.0;ord_0132;usr_0129;False;camp_start_discount_55;1833
+130;2026-08-15 14:59:16;Алгоритмы;1;9950.0;ord_0133;usr_0130;False;camp_warmup;1848
+131;2026-08-04 17:05:46;Backend старт;1;8745.0;ord_0134;usr_0131;False;camp_warmup;1876
+132;2026-08-13 11:39:13;Аналитика про;1;8745.0;ord_0135;usr_0132;False;camp_warmup;1845
+133;2026-08-16 09:59:37;Аналитика про, Аналитика старт;2;9900.0;ord_0136;usr_0133;True;camp_warmup;1848
+134;2026-08-31 08:06:47;Алгоритмы про;1;6975.0;ord_0137;usr_0134;False;camp_bigtech_internships;1872
+135;2026-08-08 20:00:19;ML старт, Алгоритмы старт;2;9990.0;ord_0138;usr_0135;True;camp_start_discount_55;1833
+136;2026-08-27 08:57:04;AI агенты, Backend про;2;14950.0;ord_0139;usr_0136;True;camp_pro_ai_ml;1869
+137;2026-08-05 15:01:16;Backend старт;1;8475.0;ord_0140;usr_0137;False;camp_warmup;1829
+138;2026-08-09 16:33:22;ML старт;1;6490.0;ord_0141;usr_0138;False;camp_start_discount_55;1836
+138;2026-08-25 12:39:08;ML про;1;5750.0;ord_0142;usr_0138;False;camp_pro_ai_ml;1859
+139;2026-09-01 20:30:07;AI агенты, ML старт;2;13950.0;ord_0143;usr_0139;True;camp_bigtech_internships;1875
+140;2026-08-25 16:01:50;Аналитика старт;1;8450.0;ord_0144;usr_0140;False;camp_pro_ai_ml;1859
+141;2026-08-24 14:48:12;Алгоритмы старт;1;7475.0;ord_0145;usr_0141;False;camp_pro_ai_ml;1859
+142;2026-08-11 15:49:13;Аналитика старт;1;6490.0;ord_0146;usr_0142;False;camp_start_discount_55;1840
+143;2026-08-16 13:21:36;К ВУЗу;1;6950.0;ord_0147;usr_0143;False;camp_warmup;1849
+144;2026-08-29 11:51:08;Аналитика про, Аналитика старт;2;8950.0;ord_0148;usr_0144;True;camp_pro_ai_ml;1869
+144;2026-09-01 15:30:39;Аналитика про;1;8950.0;ord_0149;usr_0144;False;camp_bigtech_internships;1875
+145;2026-08-30 13:06:05;Аналитика про;1;8950.0;ord_0150;usr_0145;False;camp_pro_ai_ml;1869
+146;2026-08-20 16:27:30;К ВУЗу;1;6950.0;ord_0151;usr_0146;False;camp_warmup;1856
+147;2026-09-05 19:46:01;ML про, ML старт;2;14950.0;ord_0152;usr_0147;True;camp_bigtech_internships;1878
+148;2026-08-25 09:49:25;AI агенты;1;7475.0;ord_0153;usr_0148;False;camp_pro_ai_ml;1859
+149;2026-08-23 16:50:14;ML про;1;8950.0;ord_0154;usr_0149;False;camp_pro_ai_ml;1859
+150;2026-09-06 13:11:45;Backend про;1;8950.0;ord_0155;usr_0150;False;camp_bigtech_internships;1880
+151;2026-09-06 11:31:11;Аналитика про;1;7475.0;ord_0156;usr_0151;False;camp_bigtech_internships;1878
+152;2026-08-10 08:42:13;ML старт;1;6490.0;ord_0157;usr_0152;False;camp_start_discount_55;1837
+153;2026-08-13 18:30:59;Алгоритмы;1;5750.0;ord_0158;usr_0153;False;camp_warmup;1846
+154;2026-09-06 13:40:03;Алгоритмы про;1;8950.0;ord_0159;usr_0154;False;camp_bigtech_internships;1880
+155;2026-09-05 10:20:56;Backend про, Backend старт;2;14950.0;ord_0160;usr_0155;True;camp_bigtech_internships;1878
+155;2026-09-05 12:13:44;Алгоритмы старт;1;7000.0;ord_0161;usr_0155;False;camp_bigtech_internships;1878
+156;2026-08-22 10:54:14;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0162;usr_0156;True;camp_pro_ai_ml;1859
+157;2026-08-31 06:39:53;AI агенты, ML про;2;14950.0;ord_0163;usr_0157;True;camp_bigtech_internships;1872
+158;2026-08-10 12:37:30;Backend старт, Алгоритмы;2;9400.0;ord_0164;usr_0158;True;camp_start_discount_55;1837
+159;2026-08-05 12:56:32;Backend про, Backend старт;2;16950.0;ord_0165;usr_0159;True;camp_warmup;1829
+160;2026-08-09 02:39:44;Аналитика старт;1;4995.0;ord_0166;usr_0160;False;camp_start_discount_55;1833
+161;2026-08-08 19:49:42;Backend старт, Алгоритмы старт;2;9990.0;ord_0167;usr_0161;True;camp_start_discount_55;1833
+162;2026-08-15 12:51:04;К ВУЗу;1;6950.0;ord_0168;usr_0162;False;camp_warmup;1848
+163;2026-08-26 01:23:32;AI агенты;1;8450.0;ord_0169;usr_0163;False;camp_pro_ai_ml;1859
+164;2026-08-10 13:08:15;ML старт;1;8745.0;ord_0170;usr_0164;False;camp_start_discount_55;1837
+165;2026-08-25 07:21:38;Аналитика про;1;8450.0;ord_0171;usr_0165;False;camp_pro_ai_ml;1859
+166;2026-08-06 12:15:46;К ВУЗу;1;6950.0;ord_0172;usr_0166;False;camp_warmup;1830
+167;2026-08-09 09:07:16;ML старт, Алгоритмы старт;2;9900.0;ord_0173;usr_0167;True;camp_start_discount_55;1833
+168;2026-08-25 06:26:04;AI агенты, ML про;2;14950.0;ord_0174;usr_0168;True;camp_pro_ai_ml;1859
+169;2026-09-05 15:47:16;Аналитика про;1;8950.0;ord_0175;usr_0169;False;camp_bigtech_internships;1878
+170;2026-08-12 17:51:00;ML старт;1;6000.0;ord_0176;usr_0170;False;camp_warmup;1843
+171;2026-08-31 18:20:33;Аналитика про;1;8950.0;ord_0177;usr_0171;False;camp_bigtech_internships;1875
+172;2026-08-23 16:29:57;AI агенты;1;8950.0;ord_0178;usr_0172;False;camp_pro_ai_ml;1859
+173;2026-08-11 07:48:36;ML старт, Алгоритмы старт;2;9900.0;ord_0179;usr_0173;True;camp_start_discount_55;1840
+174;2026-09-05 18:41:16;ML про, Алгоритмы про;2;14950.0;ord_0180;usr_0174;True;camp_bigtech_internships;1878
+175;2026-08-13 16:14:01;Теория вероятностей;1;9950.0;ord_0181;usr_0175;False;camp_warmup;1845
+176;2026-08-09 16:29:58;Алгоритмы;1;6490.0;ord_0182;usr_0176;False;camp_start_discount_55;1836
+177;2026-08-28 10:47:56;Аналитика старт;1;8950.0;ord_0183;usr_0177;False;camp_pro_ai_ml;1869
+178;2026-08-26 09:15:13;AI агенты;1;8950.0;ord_0184;usr_0178;False;camp_pro_ai_ml;1859
+179;2026-08-12 02:06:02;Аналитика старт;1;6490.0;ord_0185;usr_0179;False;camp_warmup;1843
+180;2026-09-06 16:23:30;Алгоритмы старт;1;2237.5;ord_0186;usr_0180;False;camp_bigtech_internships;1881
+181;2026-09-01 18:44:37;Аналитика про;1;8950.0;ord_0187;usr_0181;False;camp_bigtech_internships;1875
+182;2026-09-02 10:14:11;Backend про;1;8950.0;ord_0188;usr_0182;False;camp_bigtech_internships;1875
+183;2026-08-08 10:08:11;Backend старт;1;6490.0;ord_0189;usr_0183;False;camp_start_discount_55;1833
+184;2026-08-09 17:20:07;Алгоритмы старт;1;4950.0;ord_0190;usr_0184;False;camp_start_discount_55;1836
+185;2026-08-27 14:36:47;AI агенты, ML про;2;13950.0;ord_0191;usr_0185;True;camp_pro_ai_ml;1869
+186;2026-08-10 06:13:10;Алгоритмы старт;1;4950.0;ord_0192;usr_0186;False;camp_start_discount_55;1837
+187;2026-08-09 18:48:05;Алгоритмы старт, Аналитика старт;2;8990.0;ord_0193;usr_0187;True;camp_start_discount_55;1837
+188;2026-09-06 01:03:43;Backend про;1;6975.0;ord_0194;usr_0188;False;camp_bigtech_internships;1878
+189;2026-09-01 07:49:46;Аналитика старт;1;8945.0;ord_0195;usr_0189;False;camp_bigtech_internships;1875
+190;2026-09-09 02:52:43;Мат анализ;1;9950.0;ord_0196;usr_0190;False;camp_free_analytics_nosql;1893
+191;2026-08-27 15:11:14;AI агенты, Алгоритмы, Мат анализ, Теория вероятностей;4;29850.0;ord_0197;usr_0191;True;camp_pro_ai_ml;1869
+192;2026-08-24 15:05:04;AI агенты, ML про;2;14950.0;ord_0198;usr_0192;True;camp_pro_ai_ml;1859
+193;2026-09-06 11:49:34;AI агенты;1;8450.0;ord_0199;usr_0193;False;camp_bigtech_internships;1878
+194;2026-08-24 16:25:21;Алгоритмы старт;1;8950.0;ord_0200;usr_0194;False;camp_pro_ai_ml;1859
+195;2026-09-01 10:54:53;AI агенты;1;8450.0;ord_0201;usr_0195;False;camp_bigtech_internships;1875
+196;2026-09-10 06:09:12;Линейная алгебра;1;9950.0;ord_0202;usr_0196;False;camp_free_analytics_nosql;1893
+197;2026-09-04 15:39:31;AI агенты, Backend про;2;14950.0;ord_0203;usr_0197;True;camp_bigtech_internships;1878
+198;2026-09-04 16:44:57;Аналитика старт;1;7475.0;ord_0204;usr_0198;False;camp_bigtech_internships;1878
+199;2026-08-21 09:02:18;Мат анализ;1;9950.0;ord_0205;usr_0199;False;camp_warmup;1857
+200;2026-08-22 19:40:16;Аналитика про, Аналитика старт;2;14950.0;ord_0206;usr_0200;True;camp_pro_ai_ml;1859
+201;2026-08-24 17:28:20;Data Science;1;6950.0;ord_0207;usr_0201;False;camp_pro_ai_ml;1859
+202;2026-08-25 19:24:14;AI агенты, Backend про;2;14950.0;ord_0208;usr_0202;True;camp_pro_ai_ml;1859
+203;2026-08-23 20:42:20;AI агенты, Аналитика про;2;14950.0;ord_0209;usr_0203;True;camp_pro_ai_ml;1859
+204;2026-09-07 13:39:13;ML про;1;8950.0;ord_0210;usr_0204;False;camp_free_analytics_nosql;1887
+205;2026-09-03 15:01:50;Аналитика про;1;8950.0;ord_0211;usr_0205;False;camp_bigtech_internships;1877
+206;2026-08-09 13:00:12;Backend старт, Алгоритмы;2;9990.0;ord_0212;usr_0206;True;camp_start_discount_55;1833
+207;2026-08-09 10:15:38;Алгоритмы старт;1;6490.0;ord_0213;usr_0207;False;camp_start_discount_55;1833
+208;2026-08-13 19:25:17;К ВУЗу;1;6450.0;ord_0214;usr_0208;False;camp_warmup;1846
+209;2026-08-23 06:58:29;Backend про;1;8950.0;ord_0215;usr_0209;False;camp_pro_ai_ml;1859
+210;2026-09-05 17:12:38;Аналитика старт;1;7475.0;ord_0216;usr_0210;False;camp_bigtech_internships;1878
+211;2026-08-22 11:08:24;AI агенты, ML про;2;14950.0;ord_0217;usr_0211;True;camp_pro_ai_ml;1859
+212;2026-09-09 15:03:44;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0218;usr_0212;True;camp_free_analytics_nosql;1893
+213;2026-08-23 20:58:38;Аналитика про;1;8950.0;ord_0219;usr_0213;False;camp_pro_ai_ml;1859
+214;2026-09-07 14:02:50;AI агенты;1;8950.0;ord_0220;usr_0214;False;camp_free_analytics_nosql;1887
+215;2026-08-24 03:22:36;Алгоритмы про;1;6975.0;ord_0221;usr_0215;False;camp_pro_ai_ml;1859
+216;2026-08-23 18:13:18;AI агенты;1;7475.0;ord_0222;usr_0216;False;camp_pro_ai_ml;1859
+217;2026-08-10 14:24:20;К ВУЗу;1;6950.0;ord_0223;usr_0217;False;camp_start_discount_55;1837
+218;2026-08-22 09:03:23;Backend про, Алгоритмы про;2;16950.0;ord_0224;usr_0218;True;camp_pro_ai_ml;1859
+219;2026-08-28 13:23:53;Мат анализ;1;9950.0;ord_0225;usr_0219;False;camp_pro_ai_ml;1869
+220;2026-08-22 19:19:35;Линейная алгебра;1;9950.0;ord_0226;usr_0220;False;camp_pro_ai_ml;1859
+221;2026-08-23 07:41:37;Аналитика про, Аналитика старт;2;14950.0;ord_0227;usr_0221;True;camp_pro_ai_ml;1859
+222;2026-08-05 18:52:56;Backend про, Backend старт;2;15950.0;ord_0228;usr_0222;True;camp_warmup;1829
+223;2026-08-09 20:27:29;Алгоритмы старт;1;6490.0;ord_0229;usr_0223;False;camp_start_discount_55;1837
+224;2026-09-09 08:55:28;Аналитика про;1;8450.0;ord_0230;usr_0224;False;camp_free_analytics_nosql;1893
+225;2026-08-05 14:22:34;АВ тестам;1;8745.0;ord_0231;usr_0225;False;camp_warmup;1829
+226;2026-09-01 17:03:44;ML старт;1;7475.0;ord_0232;usr_0226;False;camp_bigtech_internships;1875
+227;2026-08-08 20:08:33;ML старт, Алгоритмы старт;2;9450.0;ord_0233;usr_0227;True;camp_start_discount_55;1833
+228;2026-08-09 19:02:28;Data Science;1;6450.0;ord_0234;usr_0228;False;camp_start_discount_55;1837
+228;2026-09-07 07:42:35;AI агенты;1;8950.0;ord_0235;usr_0228;False;camp_free_analytics_nosql;1887
+229;2026-08-14 04:19:44;Теория вероятностей;1;9950.0;ord_0236;usr_0229;False;camp_warmup;1846
+229;2026-08-23 15:38:51;AI агенты;1;8450.0;ord_0237;usr_0229;False;camp_pro_ai_ml;1859
+230;2026-09-03 15:07:18;Аналитика про;1;8950.0;ord_0238;usr_0230;False;camp_bigtech_internships;1877
+231;2026-09-01 18:08:01;Алгоритмы, Дискретка, Линейная алгебра, Мат анализ, Теория вероятностей;5;41225.0;ord_0239;usr_0231;True;camp_bigtech_internships;1875
+232;2026-08-09 10:47:20;Аналитика старт;1;6490.0;ord_0240;usr_0232;False;camp_start_discount_55;1833
+233;2026-08-08 18:51:08;Аналитика старт;1;6490.0;ord_0241;usr_0233;False;camp_start_discount_55;1833
+234;2026-08-12 06:04:03;ML старт;1;4950.0;ord_0242;usr_0234;False;camp_warmup;1843
+235;2026-08-23 16:04:24;AI агенты;1;8450.0;ord_0243;usr_0235;False;camp_pro_ai_ml;1859
+236;2026-08-29 05:27:29;ML про;1;7475.0;ord_0244;usr_0236;False;camp_pro_ai_ml;1869
+237;2026-08-23 13:29:45;AI агенты;1;8950.0;ord_0245;usr_0237;False;camp_pro_ai_ml;1859
+238;2026-09-05 13:28:56;Backend про;1;8950.0;ord_0246;usr_0238;False;camp_bigtech_internships;1878
+239;2026-08-31 17:06:09;Аналитика про;1;8450.0;ord_0247;usr_0239;False;camp_bigtech_internships;1872
+240;2026-08-22 18:00:15;Алгоритмы про;1;6450.0;ord_0248;usr_0240;False;camp_pro_ai_ml;1859
+241;2026-08-30 17:07:59;Backend старт;1;8950.0;ord_0249;usr_0241;False;camp_pro_ai_ml;1874
+242;2026-08-29 13:44:52;ML про;1;8950.0;ord_0250;usr_0242;False;camp_pro_ai_ml;1869
+243;2026-08-24 10:40:35;AI агенты;1;8950.0;ord_0251;usr_0243;False;camp_pro_ai_ml;1859
+244;2026-09-02 10:24:40;Алгоритмы старт;1;8950.0;ord_0252;usr_0244;False;camp_bigtech_internships;1875
+245;2026-09-05 15:54:58;Backend про;1;8950.0;ord_0253;usr_0245;False;camp_bigtech_internships;1878
+246;2026-09-07 16:45:55;Мат анализ;1;9950.0;ord_0254;usr_0246;False;camp_free_analytics_nosql;1887
+247;2026-09-01 14:59:35;ML про, ML старт;2;14950.0;ord_0255;usr_0247;True;camp_bigtech_internships;1875
+248;2026-08-22 13:43:42;ML про;1;7475.0;ord_0256;usr_0248;False;camp_pro_ai_ml;1859
+249;2026-08-07 19:38:55;К ВУЗу;1;6950.0;ord_0257;usr_0249;False;camp_warmup;1831
+250;2026-09-05 14:54:24;Backend про, Backend старт;2;14950.0;ord_0258;usr_0250;True;camp_bigtech_internships;1878
+251;2026-09-06 18:05:45;Мат анализ;1;9950.0;ord_0259;usr_0251;False;camp_bigtech_internships;1882
+252;2026-09-03 16:36:15;Backend про;1;8950.0;ord_0260;usr_0252;False;camp_bigtech_internships;1877
+253;2026-08-30 17:04:49;AI агенты;1;8950.0;ord_0261;usr_0253;False;camp_pro_ai_ml;1874
+254;2026-09-07 14:53:39;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0262;usr_0254;True;camp_free_analytics_nosql;1887
+255;2026-08-26 14:52:53;ML старт;1;8950.0;ord_0263;usr_0255;False;camp_pro_ai_ml;1859
+256;2026-08-08 17:54:37;ML старт;1;5990.0;ord_0264;usr_0256;False;camp_start_discount_55;1833
+257;2026-08-23 20:56:06;Backend про;1;8450.0;ord_0265;usr_0257;False;camp_pro_ai_ml;1859
+258;2026-08-10 15:03:03;Алгоритмы;1;6490.0;ord_0266;usr_0258;False;camp_start_discount_55;1837
+259;2026-08-08 07:59:01;ML про;1;8745.0;ord_0267;usr_0259;False;camp_start_discount_55;1833
+260;2026-08-12 05:32:11;Алгоритмы, Алгоритмы про;2;9900.0;ord_0268;usr_0260;True;camp_warmup;1843
+261;2026-09-06 16:06:04;AI агенты;1;8950.0;ord_0269;usr_0261;False;camp_bigtech_internships;1881
+262;2026-08-09 09:10:55;Backend про;1;6490.0;ord_0270;usr_0262;False;camp_start_discount_55;1833
+263;2026-08-22 19:53:10;ML про;1;8950.0;ord_0271;usr_0263;False;camp_pro_ai_ml;1859
+263;2026-08-25 03:19:38;AI агенты;1;6000.0;ord_0272;usr_0263;False;camp_pro_ai_ml;1859
+264;2026-09-02 18:37:57;Backend про, Алгоритмы;2;8450.0;ord_0273;usr_0264;True;camp_bigtech_internships;1875
+265;2026-08-08 16:25:28;ML старт;1;5990.0;ord_0274;usr_0265;False;camp_start_discount_55;1833
+266;2026-09-02 11:33:22;Мат анализ;1;10000.0;ord_0275;usr_0266;False;camp_bigtech_internships;1875
+267;2026-08-31 08:26:17;Аналитика про;1;8950.0;ord_0276;usr_0267;False;camp_bigtech_internships;1872
+268;2026-08-24 12:52:49;AI агенты;1;8950.0;ord_0277;usr_0268;False;camp_pro_ai_ml;1859
+269;2026-08-25 22:26:03;Backend про;1;7475.0;ord_0278;usr_0269;False;camp_pro_ai_ml;1859
+270;2026-09-05 14:08:51;Аналитика про;1;8950.0;ord_0279;usr_0270;False;camp_bigtech_internships;1878
+271;2026-09-03 12:55:50;ML про, Алгоритмы про;2;14950.0;ord_0280;usr_0271;True;camp_bigtech_internships;1877
+272;2026-08-31 18:34:40;Аналитика про;1;8950.0;ord_0281;usr_0272;False;camp_bigtech_internships;1875
+273;2026-09-03 08:17:51;ML про;1;8950.0;ord_0282;usr_0273;False;camp_bigtech_internships;1877
+274;2026-08-30 23:37:30;Аналитика про;1;6975.0;ord_0283;usr_0274;False;camp_pro_ai_ml;1874
+275;2026-08-13 09:51:23;Алгоритмы старт;1;8745.0;ord_0284;usr_0275;False;camp_warmup;1844
+275;2026-09-06 11:58:58;AI агенты, ML про;2;13950.0;ord_0285;usr_0275;True;camp_bigtech_internships;1878
+276;2026-08-15 12:43:23;ML старт, Алгоритмы старт;2;5750.0;ord_0286;usr_0276;True;camp_warmup;1848
+277;2026-08-22 11:24:53;Backend про;1;5750.0;ord_0287;usr_0277;False;camp_pro_ai_ml;1859
+278;2026-09-06 17:31:06;Аналитика про, Аналитика старт;2;14950.0;ord_0288;usr_0278;True;camp_bigtech_internships;1881
+279;2026-08-09 09:48:26;Аналитика старт;1;6490.0;ord_0289;usr_0279;False;camp_start_discount_55;1833
+280;2026-08-05 16:37:02;ML старт;1;8245.0;ord_0290;usr_0280;False;camp_warmup;1829
+281;2026-08-11 12:02:08;ML старт;1;4950.0;ord_0291;usr_0281;False;camp_start_discount_55;1840
+282;2026-08-09 18:55:57;ML про;1;8745.0;ord_0292;usr_0282;False;camp_start_discount_55;1837
+283;2026-09-09 13:34:09;AI агенты, ML про;2;14950.0;ord_0293;usr_0283;True;camp_free_analytics_nosql;1893
+284;2026-08-30 11:56:49;ML про;1;6975.0;ord_0294;usr_0284;False;camp_pro_ai_ml;1869
+285;2026-08-30 08:22:49;AI агенты, ML про;2;13950.0;ord_0295;usr_0285;True;camp_pro_ai_ml;1869
+286;2026-08-09 16:16:39;Аналитика старт;1;6490.0;ord_0296;usr_0286;False;camp_start_discount_55;1836
+287;2026-08-19 07:46:07;Data Science;1;6950.0;ord_0297;usr_0287;False;camp_warmup;1855
+288;2026-09-02 08:57:12;Аналитика про;1;8945.0;ord_0298;usr_0288;False;camp_bigtech_internships;1875
+289;2026-08-28 16:24:51;AI агенты;1;8950.0;ord_0299;usr_0289;False;camp_pro_ai_ml;1869
+290;2026-08-23 16:53:02;Аналитика старт;1;7475.0;ord_0300;usr_0290;False;camp_pro_ai_ml;1859
+291;2026-08-06 10:06:16;Линейная алгебра, Мат анализ;2;19900.0;ord_0301;usr_0291;True;camp_warmup;1830
+292;2026-09-06 12:59:39;ML про;1;6975.0;ord_0302;usr_0292;False;camp_bigtech_internships;1880
+293;2026-08-22 11:35:35;Backend про;1;8950.0;ord_0303;usr_0293;False;camp_pro_ai_ml;1859
+294;2026-08-06 10:39:31;Линейная алгебра;1;9950.0;ord_0304;usr_0294;False;camp_warmup;1830
+295;2026-08-06 10:14:55;К ВУЗу;1;6950.0;ord_0305;usr_0295;False;camp_warmup;1830
+296;2026-09-01 10:46:43;Аналитика старт;1;8950.0;ord_0306;usr_0296;False;camp_bigtech_internships;1875
+297;2026-08-22 17:26:07;Алгоритмы;1;8450.0;ord_0307;usr_0297;False;camp_pro_ai_ml;1859
+298;2026-08-23 18:48:14;Аналитика про;1;6975.0;ord_0308;usr_0298;False;camp_pro_ai_ml;1859
+299;2026-08-24 16:58:19;Аналитика про;1;8950.0;ord_0309;usr_0299;False;camp_pro_ai_ml;1859
+300;2026-09-06 17:58:00;Data Science;1;6950.0;ord_0310;usr_0300;False;camp_bigtech_internships;1881
+301;2026-08-31 20:57:15;ML старт, Аналитика старт;2;17950.0;ord_0311;usr_0301;True;camp_bigtech_internships;1875
+302;2026-09-04 15:20:47;Аналитика про;1;7475.0;ord_0312;usr_0302;False;camp_bigtech_internships;1878
+303;2026-09-04 15:21:52;ML про, ML старт;2;14950.0;ord_0313;usr_0303;True;camp_bigtech_internships;1878
+304;2026-08-11 15:52:40;К ВУЗу;1;6950.0;ord_0314;usr_0304;False;camp_start_discount_55;1840
+305;2026-08-31 17:03:19;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0315;usr_0305;True;camp_bigtech_internships;1872
+306;2026-09-06 16:18:59;ML старт;1;8950.0;ord_0316;usr_0306;False;camp_bigtech_internships;1881
+307;2026-08-23 15:39:57;Аналитика про;1;8450.0;ord_0317;usr_0307;False;camp_pro_ai_ml;1859
+308;2026-08-08 14:05:17;Backend старт, Алгоритмы старт;2;9900.0;ord_0318;usr_0308;True;camp_start_discount_55;1833
+309;2026-09-05 09:55:40;ML про;1;8950.0;ord_0319;usr_0309;False;camp_bigtech_internships;1878
+310;2026-09-06 16:38:02;AI агенты, ML про;2;14950.0;ord_0320;usr_0310;True;camp_bigtech_internships;1881
+311;2026-08-11 16:15:41;ML старт, Алгоритмы старт;2;9900.0;ord_0321;usr_0311;True;camp_start_discount_55;1840
+312;2026-08-23 09:59:13;Аналитика про;1;7475.0;ord_0322;usr_0312;False;camp_pro_ai_ml;1859
+313;2026-08-07 11:58:49;Мат анализ;1;9450.0;ord_0323;usr_0313;False;camp_warmup;1831
+314;2026-08-28 18:44:36;Аналитика старт;1;8950.0;ord_0324;usr_0314;False;camp_pro_ai_ml;1869
+315;2026-08-23 16:40:25;AI агенты, Backend про;2;14950.0;ord_0325;usr_0315;True;camp_pro_ai_ml;1859
+316;2026-08-14 12:59:02;АВ тестам;1;4495.0;ord_0326;usr_0316;False;camp_warmup;1847
+317;2026-09-04 13:16:14;Аналитика про;1;8950.0;ord_0327;usr_0317;False;camp_bigtech_internships;1878
+318;2026-09-03 17:23:38;Аналитика про;1;8450.0;ord_0328;usr_0318;False;camp_bigtech_internships;1877
+319;2026-08-09 17:25:06;ML старт;1;4950.0;ord_0329;usr_0319;False;camp_start_discount_55;1836
+320;2026-08-08 19:54:31;Алгоритмы старт, Аналитика старт;2;9990.0;ord_0330;usr_0320;True;camp_start_discount_55;1833
+321;2026-08-09 16:24:15;ML старт;1;6490.0;ord_0331;usr_0321;False;camp_start_discount_55;1836
+322;2026-08-28 14:03:47;ML про, Алгоритмы старт;2;14950.0;ord_0332;usr_0322;True;camp_pro_ai_ml;1869
+323;2026-08-09 18:56:09;Backend старт, Алгоритмы;2;9990.0;ord_0333;usr_0323;True;camp_start_discount_55;1837
+324;2026-08-31 19:22:31;AI агенты;1;8450.0;ord_0334;usr_0324;False;camp_bigtech_internships;1875
+325;2026-08-06 11:41:17;Линейная алгебра;1;9950.0;ord_0335;usr_0325;False;camp_warmup;1830
+326;2026-09-04 10:55:46;Аналитика про, Аналитика старт;2;14950.0;ord_0336;usr_0326;True;camp_bigtech_internships;1878
+327;2026-09-06 12:45:38;AI агенты;1;8950.0;ord_0337;usr_0327;False;camp_bigtech_internships;1880
+328;2026-09-05 10:58:26;ML про, Аналитика про;2;14950.0;ord_0338;usr_0328;True;camp_bigtech_internships;1878
+329;2026-08-09 16:51:47;Алгоритмы старт;1;6490.0;ord_0339;usr_0329;False;camp_start_discount_55;1836
+330;2026-09-03 15:10:16;Аналитика про, Аналитика старт;2;14950.0;ord_0340;usr_0330;True;camp_bigtech_internships;1877
+331;2026-08-09 16:31:09;Алгоритмы старт, Аналитика старт;2;9990.0;ord_0341;usr_0331;True;camp_start_discount_55;1836
+332;2026-08-12 06:44:05;ML старт;1;9900.0;ord_0342;usr_0332;False;camp_warmup;1843
+333;2026-08-08 18:25:13;Аналитика старт;1;6490.0;ord_0343;usr_0333;False;camp_start_discount_55;1833
+334;2026-08-07 11:16:14;Линейная алгебра, Мат анализ;2;19900.0;ord_0344;usr_0334;True;camp_warmup;1831
+335;2026-08-09 16:07:42;ML старт, Алгоритмы старт;2;9900.0;ord_0345;usr_0335;True;camp_start_discount_55;1836
+336;2026-08-09 13:48:41;ML старт, Алгоритмы старт;2;9900.0;ord_0346;usr_0336;True;camp_start_discount_55;1836
+337;2026-09-09 15:41:19;Алгоритмы про;1;7475.0;ord_0347;usr_0337;False;camp_free_analytics_nosql;1893
+338;2026-08-23 06:47:37;Аналитика про, Аналитика старт;2;14950.0;ord_0348;usr_0338;True;camp_pro_ai_ml;1859
+339;2026-08-11 12:22:26;К ВУЗу;1;6450.0;ord_0349;usr_0339;False;camp_start_discount_55;1840
+340;2026-08-29 09:29:52;АВ тестам, Аналитика старт;2;11950.0;ord_0350;usr_0340;True;camp_pro_ai_ml;1869
+341;2026-08-23 11:59:04;ML про;1;8950.0;ord_0351;usr_0341;False;camp_pro_ai_ml;1859
+342;2026-08-13 09:48:34;Теория вероятностей;1;9950.0;ord_0352;usr_0342;False;camp_warmup;1844
+343;2026-09-01 19:07:54;ML старт;1;8950.0;ord_0353;usr_0343;False;camp_bigtech_internships;1875
+344;2026-09-06 14:48:52;AI агенты;1;8950.0;ord_0354;usr_0344;False;camp_bigtech_internships;1880
+345;2026-09-03 16:33:15;Аналитика про;1;8950.0;ord_0355;usr_0345;False;camp_bigtech_internships;1877
+346;2026-08-18 10:15:05;ML старт;1;8745.0;ord_0356;usr_0346;False;camp_warmup;1854
+347;2026-09-06 18:35:08;Аналитика про;1;7475.0;ord_0357;usr_0347;False;camp_bigtech_internships;1882
+348;2026-08-12 19:17:21;К ВУЗу;1;6950.0;ord_0358;usr_0348;False;camp_warmup;1844
+349;2026-09-09 16:10:16;Алгоритмы старт;1;7475.0;ord_0359;usr_0349;False;camp_free_analytics_nosql;1893
+350;2026-09-05 18:12:55;Аналитика про;1;8450.0;ord_0360;usr_0350;False;camp_bigtech_internships;1878
+351;2026-08-20 11:12:25;Линейная алгебра;1;9450.0;ord_0361;usr_0351;False;camp_warmup;1856
+352;2026-09-03 16:22:06;Алгоритмы про;1;8450.0;ord_0362;usr_0352;False;camp_bigtech_internships;1877
+353;2026-08-22 11:39:22;Аналитика старт;1;8950.0;ord_0363;usr_0353;False;camp_pro_ai_ml;1859
+354;2026-09-04 13:47:25;Дискретка;1;8245.0;ord_0364;usr_0354;False;camp_bigtech_internships;1878
+355;2026-09-02 14:30:26;Backend про;1;8450.0;ord_0365;usr_0355;False;camp_bigtech_internships;1875
+356;2026-08-09 13:48:05;Backend старт;1;6950.0;ord_0366;usr_0356;False;camp_start_discount_55;1836
+357;2026-08-24 02:46:33;Теория вероятностей;1;9950.0;ord_0367;usr_0357;False;camp_pro_ai_ml;1859
+358;2026-09-09 06:30:33;Аналитика про;1;8450.0;ord_0368;usr_0358;False;camp_free_analytics_nosql;1893
+359;2026-09-06 18:40:33;Аналитика старт;1;7475.0;ord_0369;usr_0359;False;camp_bigtech_internships;1882
+360;2026-08-23 20:57:22;AI агенты;1;8950.0;ord_0370;usr_0360;False;camp_pro_ai_ml;1859
+361;2026-08-17 10:53:42;ML старт, Алгоритмы старт;2;17490.0;ord_0371;usr_0361;True;camp_warmup;1853
+362;2026-09-05 14:52:23;ML про;1;8450.0;ord_0372;usr_0362;False;camp_bigtech_internships;1878
+363;2026-09-04 06:28:52;Backend про;1;8945.0;ord_0373;usr_0363;False;camp_bigtech_internships;1878
+364;2026-08-13 00:01:02;Аналитика про;1;8475.0;ord_0374;usr_0364;False;camp_warmup;1844
+365;2026-08-09 16:15:08;ML старт;1;6490.0;ord_0375;usr_0365;False;camp_start_discount_55;1836
+366;2026-09-06 15:18:37;AI агенты, ML про, ML старт, Алгоритмы старт;4;8950.0;ord_0376;usr_0366;True;camp_bigtech_internships;1881
+367;2026-08-23 18:18:15;Аналитика старт;1;8245.0;ord_0377;usr_0367;False;camp_pro_ai_ml;1859
+368;2026-08-24 14:21:10;Аналитика про;1;8950.0;ord_0378;usr_0368;False;camp_pro_ai_ml;1859
+369;2026-08-09 18:53:23;Алгоритмы старт;1;4495.0;ord_0379;usr_0369;False;camp_start_discount_55;1837
+370;2026-08-08 14:10:35;Backend старт;1;6490.0;ord_0380;usr_0370;False;camp_start_discount_55;1833
+370;2026-08-22 11:14:12;Backend про;1;5750.0;ord_0381;usr_0370;False;camp_pro_ai_ml;1859
+371;2026-08-09 17:17:09;ML старт, Алгоритмы старт;2;9900.0;ord_0382;usr_0371;True;camp_start_discount_55;1836
+372;2026-08-22 15:11:44;AI агенты;1;7450.0;ord_0383;usr_0372;False;camp_pro_ai_ml;1859
+373;2026-08-22 18:58:36;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0384;usr_0373;True;camp_pro_ai_ml;1859
+374;2026-08-09 19:11:48;Data Science;1;6450.0;ord_0385;usr_0374;False;camp_start_discount_55;1837
+375;2026-09-04 14:19:28;Алгоритмы про;1;7000.0;ord_0386;usr_0375;False;camp_bigtech_internships;1878
+376;2026-09-03 15:43:04;К ВУЗу;1;6950.0;ord_0387;usr_0376;False;camp_bigtech_internships;1877
+377;2026-09-05 19:24:12;Аналитика про, Аналитика старт;2;14950.0;ord_0388;usr_0377;True;camp_bigtech_internships;1878
+378;2026-09-04 15:08:47;Аналитика про;1;8950.0;ord_0389;usr_0378;False;camp_bigtech_internships;1878
+379;2026-09-04 11:44:55;Аналитика про;1;7475.0;ord_0390;usr_0379;False;camp_bigtech_internships;1878
+380;2026-08-09 17:19:11;ML старт;1;6490.0;ord_0391;usr_0380;False;camp_start_discount_55;1836
+381;2026-09-09 14:46:43;Аналитика старт;1;8950.0;ord_0392;usr_0381;False;camp_free_analytics_nosql;1893
+382;2026-08-09 18:58:42;ML старт, Алгоритмы старт;2;8900.0;ord_0393;usr_0382;True;camp_start_discount_55;1837
+383;2026-09-04 14:11:02;Аналитика про;1;8950.0;ord_0394;usr_0383;False;camp_bigtech_internships;1878
+384;2026-09-04 20:38:50;Аналитика про;1;8450.0;ord_0395;usr_0384;False;camp_bigtech_internships;1878
+385;2026-09-02 14:17:34;АВ тестам, Аналитика старт;2;11950.0;ord_0396;usr_0385;True;camp_bigtech_internships;1875
+386;2026-08-19 13:53:46;Backend про;1;7000.0;ord_0397;usr_0386;False;camp_warmup;1855
+387;2026-08-31 09:09:41;AI агенты;1;8545.0;ord_0398;usr_0387;False;camp_bigtech_internships;1872
+388;2026-08-12 13:28:18;ML старт;1;7000.0;ord_0399;usr_0388;False;camp_warmup;1843
+389;2026-08-09 10:18:12;ML старт, Алгоритмы старт;2;9900.0;ord_0400;usr_0389;True;camp_start_discount_55;1833
+389;2026-08-10 19:12:23;Аналитика старт;1;5990.0;ord_0401;usr_0389;False;camp_start_discount_55;1838
+390;2026-09-01 02:23:30;Аналитика старт;1;8975.0;ord_0402;usr_0390;False;camp_bigtech_internships;1875
+391;2026-08-14 18:55:11;Алгоритмы старт;1;8745.0;ord_0403;usr_0391;False;camp_warmup;1847
+392;2026-08-20 13:14:17;Аналитика старт;1;8745.0;ord_0404;usr_0392;False;camp_warmup;1856
+393;2026-08-29 09:45:18;Мат анализ;1;9450.0;ord_0405;usr_0393;False;camp_pro_ai_ml;1869
+394;2026-09-05 10:17:43;Алгоритмы про;1;8950.0;ord_0406;usr_0394;False;camp_bigtech_internships;1878
+395;2026-09-03 11:18:32;ML про;1;8950.0;ord_0407;usr_0395;False;camp_bigtech_internships;1877
+396;2026-09-06 19:15:37;Мат анализ;1;9950.0;ord_0408;usr_0396;False;camp_bigtech_internships;1882
+397;2026-09-05 11:02:15;Аналитика старт;1;8950.0;ord_0409;usr_0397;False;camp_bigtech_internships;1878
+398;2026-09-05 18:06:36;ML про;1;8950.0;ord_0410;usr_0398;False;camp_bigtech_internships;1878
+399;2026-09-06 19:02:33;ML про;1;8950.0;ord_0411;usr_0399;False;camp_bigtech_internships;1882
+400;2026-08-09 16:12:09;Алгоритмы старт;1;6490.0;ord_0412;usr_0400;False;camp_start_discount_55;1836
+401;2026-08-08 22:16:55;Backend про;1;8245.0;ord_0413;usr_0401;False;camp_start_discount_55;1833
+402;2026-08-09 17:25:40;ML старт, Алгоритмы старт;2;9990.0;ord_0414;usr_0402;True;camp_start_discount_55;1836
+402;2026-09-03 17:30:08;ML про;1;8450.0;ord_0415;usr_0402;False;camp_bigtech_internships;1877
+403;2026-08-31 10:18:44;Backend про;1;8950.0;ord_0416;usr_0403;False;camp_bigtech_internships;1872
+404;2026-09-02 19:30:00;Алгоритмы про;1;7475.0;ord_0417;usr_0404;False;camp_bigtech_internships;1877
+405;2026-09-05 14:29:26;Backend старт;1;8950.0;ord_0418;usr_0405;False;camp_bigtech_internships;1878
+406;2026-09-05 13:55:08;ML про;1;8450.0;ord_0419;usr_0406;False;camp_bigtech_internships;1878
+407;2026-09-09 23:11:20;Линейная алгебра;1;8950.0;ord_0420;usr_0407;False;camp_free_analytics_nosql;1893
+408;2026-08-10 15:22:41;Аналитика старт;1;6490.0;ord_0421;usr_0408;False;camp_start_discount_55;1837
+409;2026-09-03 21:58:56;AI агенты;1;5000.0;ord_0422;usr_0409;False;camp_bigtech_internships;1878
+410;2026-08-08 16:51:05;Backend старт;1;6490.0;ord_0423;usr_0410;False;camp_start_discount_55;1833
+411;2026-08-30 11:21:33;AI агенты;1;8545.0;ord_0424;usr_0411;False;camp_pro_ai_ml;1869
+412;2026-08-08 14:06:52;ML старт, Алгоритмы старт;2;9990.0;ord_0425;usr_0412;True;camp_start_discount_55;1833
+413;2026-08-18 19:40:47;Аналитика старт;1;8745.0;ord_0426;usr_0413;False;camp_warmup;1855
+414;2026-09-05 16:25:16;ML про;1;8950.0;ord_0427;usr_0414;False;camp_bigtech_internships;1878
+415;2026-08-09 04:51:42;Backend старт;1;4995.0;ord_0428;usr_0415;False;camp_start_discount_55;1833
+416;2026-09-05 21:19:33;Backend про, ML про;2;13950.0;ord_0429;usr_0416;True;camp_bigtech_internships;1878
+417;2026-08-11 10:51:54;К ВУЗу;1;6950.0;ord_0430;usr_0417;False;camp_start_discount_55;1840
+418;2026-08-26 04:03:43;Backend про, Backend старт;2;14950.0;ord_0431;usr_0418;True;camp_pro_ai_ml;1859
+419;2026-09-02 10:06:52;ML про, Алгоритмы про;2;14950.0;ord_0432;usr_0419;True;camp_bigtech_internships;1875
+420;2026-08-14 20:17:00;К ВУЗу;1;6950.0;ord_0433;usr_0420;False;camp_warmup;1848
+421;2026-08-08 20:25:37;Data Engenering, Алгоритмы;2;9990.0;ord_0434;usr_0421;True;camp_start_discount_55;1833
+422;2026-09-02 15:30:05;Теория вероятностей;1;9450.0;ord_0435;usr_0422;False;camp_bigtech_internships;1875
+423;2026-09-01 12:44:58;ML про;1;7475.0;ord_0436;usr_0423;False;camp_bigtech_internships;1875
+424;2026-08-23 17:45:31;AI агенты, Аналитика про;2;14950.0;ord_0437;usr_0424;True;camp_pro_ai_ml;1859
+425;2026-08-24 07:03:39;AI агенты;1;8503.0;ord_0438;usr_0425;False;camp_pro_ai_ml;1859
+426;2026-08-13 09:26:22;ML старт;1;6000.0;ord_0439;usr_0426;False;camp_warmup;1844
+427;2026-08-08 19:23:46;ML старт, Алгоритмы;2;9900.0;ord_0440;usr_0427;True;camp_start_discount_55;1833
+428;2026-09-04 18:33:44;ML про, ML старт;2;17900.0;ord_0441;usr_0428;True;camp_bigtech_internships;1878
+429;2026-09-08 13:04:06;Мат анализ;1;9950.0;ord_0442;usr_0429;False;camp_free_analytics_nosql;1893
+430;2026-08-04 13:38:06;К ВУЗу;1;8950.0;ord_0443;usr_0430;False;camp_warmup;1876
+430;2026-08-23 16:17:56;К ВУЗу;1;8000.0;ord_0444;usr_0430;False;camp_pro_ai_ml;1859
+431;2026-09-05 15:28:29;Алгоритмы старт;1;8950.0;ord_0445;usr_0431;False;camp_bigtech_internships;1878
+432;2026-08-29 19:39:58;Backend про;1;8950.0;ord_0446;usr_0432;False;camp_pro_ai_ml;1869
+432;2026-08-30 10:31:12;AI агенты;1;8545.0;ord_0447;usr_0432;False;camp_pro_ai_ml;1869
+433;2026-08-09 19:40:37;ML старт, Алгоритмы старт;2;9900.0;ord_0448;usr_0433;True;camp_start_discount_55;1837
+434;2026-09-06 15:23:19;Backend про;1;8450.0;ord_0449;usr_0434;False;camp_bigtech_internships;1881
+435;2026-08-09 16:13:53;Аналитика про, Аналитика старт;2;9900.0;ord_0450;usr_0435;True;camp_start_discount_55;1836
+436;2026-08-23 15:04:52;Алгоритмы про;1;8450.0;ord_0451;usr_0436;False;camp_pro_ai_ml;1859
+437;2026-08-04 09:08:31;ML про;1;8950.0;ord_0452;usr_0437;False;camp_warmup;1876
+437;2026-08-04 09:35:00;Аналитика старт;1;7890.0;ord_0453;usr_0437;False;camp_warmup;1876
+437;2026-08-22 08:23:59;AI агенты;1;8950.0;ord_0454;usr_0437;False;camp_pro_ai_ml;1859
+437;2026-08-30 16:16:42;AI агенты;1;1000.0;ord_0455;usr_0437;False;camp_pro_ai_ml;1869
+438;2026-09-09 13:24:37;Аналитика про;1;8950.0;ord_0456;usr_0438;False;camp_free_analytics_nosql;1893
+439;2026-08-09 20:20:29;Backend старт;1;6490.0;ord_0457;usr_0439;False;camp_start_discount_55;1837
+440;2026-08-24 03:20:05;ML про;1;7475.0;ord_0458;usr_0440;False;camp_pro_ai_ml;1859
+441;2026-08-16 09:40:30;Алгоритмы старт;1;8745.0;ord_0459;usr_0441;False;camp_warmup;1848
+442;2026-08-14 11:21:45;К ВУЗу;1;6950.0;ord_0460;usr_0442;False;camp_warmup;1846
+443;2026-08-04 10:14:38;Линейная алгебра, Мат анализ;2;16950.0;ord_0461;usr_0443;True;camp_warmup;1876
+444;2026-09-09 16:46:07;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0462;usr_0444;True;camp_free_analytics_nosql;1893
+445;2026-08-10 00:36:19;Аналитика про;1;4950.0;ord_0463;usr_0445;False;camp_start_discount_55;1837
+446;2026-08-10 09:02:50;Data Engenering;1;6950.0;ord_0464;usr_0446;False;camp_start_discount_55;1837
+447;2026-08-23 13:46:56;Backend про;1;8450.0;ord_0465;usr_0447;False;camp_pro_ai_ml;1859
+448;2026-08-14 14:23:30;ML про, ML старт;2;16950.0;ord_0466;usr_0448;True;camp_warmup;1847
+449;2026-09-06 17:28:24;Алгоритмы старт;1;8950.0;ord_0467;usr_0449;False;camp_bigtech_internships;1881
+450;2026-09-03 06:06:37;Backend про;1;8950.0;ord_0468;usr_0450;False;camp_bigtech_internships;1877
+451;2026-08-08 16:24:46;Backend про;1;8245.0;ord_0469;usr_0451;False;camp_start_discount_55;1833
+452;2026-08-25 21:09:34;AI агенты;1;8450.0;ord_0470;usr_0452;False;camp_pro_ai_ml;1859
+453;2026-08-11 17:07:53;Алгоритмы старт;1;4950.0;ord_0471;usr_0453;False;camp_start_discount_55;1840
+454;2026-09-07 04:33:26;ML про;1;8950.0;ord_0472;usr_0454;False;camp_free_analytics_nosql;1887
+455;2026-08-25 07:53:50;Backend старт;1;8950.0;ord_0473;usr_0455;False;camp_pro_ai_ml;1859
+456;2026-09-08 17:57:42;Мат анализ;1;9950.0;ord_0474;usr_0456;False;camp_free_analytics_nosql;1893
+457;2026-08-09 10:16:31;Алгоритмы старт;1;6490.0;ord_0475;usr_0457;False;camp_start_discount_55;1833
+458;2026-08-22 11:58:37;Backend про;1;8450.0;ord_0476;usr_0458;False;camp_pro_ai_ml;1859
+459;2026-08-07 11:31:08;Мат анализ;1;9950.0;ord_0477;usr_0459;False;camp_warmup;1831
+460;2026-08-12 13:12:40;Аналитика старт;1;8745.0;ord_0478;usr_0460;False;camp_warmup;1843
+461;2026-09-05 15:01:05;Аналитика про, Аналитика старт;2;14950.0;ord_0479;usr_0461;True;camp_bigtech_internships;1878
+462;2026-08-09 16:45:22;Алгоритмы старт;1;500.0;ord_0480;usr_0462;False;camp_start_discount_55;1836
+463;2026-08-25 13:16:31;ML про;1;8950.0;ord_0481;usr_0463;False;camp_pro_ai_ml;1859
+464;2026-08-10 18:30:49;Аналитика старт;1;4500.0;ord_0482;usr_0464;False;camp_start_discount_55;1838
+465;2026-09-07 08:21:23;Алгоритмы;1;4225.0;ord_0483;usr_0465;False;camp_free_analytics_nosql;1887
+466;2026-08-26 13:56:39;ML про;1;8950.0;ord_0484;usr_0466;False;camp_pro_ai_ml;1859
+467;2026-08-10 13:55:50;Аналитика старт;1;6490.0;ord_0485;usr_0467;False;camp_start_discount_55;1837
+468;2026-08-19 07:10:12;Линейная алгебра;1;9450.0;ord_0486;usr_0468;False;camp_warmup;1855
+469;2026-08-08 19:45:24;Алгоритмы;1;4950.0;ord_0487;usr_0469;False;camp_start_discount_55;1833
+470;2026-08-09 17:24:05;ML старт, Алгоритмы;2;9900.0;ord_0488;usr_0470;True;camp_start_discount_55;1836
+471;2026-09-04 18:12:51;Линейная алгебра;1;9950.0;ord_0489;usr_0471;False;camp_bigtech_internships;1878
+472;2026-09-06 13:45:12;ML про;1;8950.0;ord_0490;usr_0472;False;camp_bigtech_internships;1880
+473;2026-08-08 13:57:16;Алгоритмы;1;10000.0;ord_0491;usr_0473;False;camp_start_discount_55;1833
+474;2026-08-14 07:16:32;К ВУЗу;1;6950.0;ord_0492;usr_0474;False;camp_warmup;1846
+475;2026-08-24 15:16:31;Линейная алгебра;1;9950.0;ord_0493;usr_0475;False;camp_pro_ai_ml;1859
+476;2026-08-09 14:14:07;ML старт, Алгоритмы старт;2;8900.0;ord_0494;usr_0476;True;camp_start_discount_55;1836
+477;2026-08-06 14:52:49;Теория вероятностей;1;500.0;ord_0495;usr_0477;False;camp_warmup;1830
+477;2026-08-18 15:06:11;Линейная алгебра;1;9450.0;ord_0496;usr_0477;False;camp_warmup;1854
+478;2026-08-10 00:13:55;Data Engenering;1;6450.0;ord_0497;usr_0478;False;camp_start_discount_55;1837
+479;2026-08-16 09:40:02;Аналитика старт;1;8745.0;ord_0498;usr_0479;False;camp_warmup;1848
+480;2026-08-04 16:17:19;Data Science;1;15695.0;ord_0499;usr_0480;False;camp_warmup;1876
+481;2026-08-07 13:09:54;ML про;1;8745.0;ord_0500;usr_0481;False;camp_warmup;1831
+482;2026-08-15 16:30:16;ML старт, Алгоритмы;2;16950.0;ord_0501;usr_0482;True;camp_warmup;1848
+483;2026-08-29 19:38:52;AI агенты;1;8450.0;ord_0502;usr_0483;False;camp_pro_ai_ml;1869
+484;2026-08-15 19:17:47;Аналитика старт;1;8745.0;ord_0503;usr_0484;False;camp_warmup;1848
+485;2026-08-22 16:02:00;Аналитика про;1;8450.0;ord_0504;usr_0485;False;camp_pro_ai_ml;1859
+486;2026-09-02 09:28:52;Backend про;1;8950.0;ord_0505;usr_0486;False;camp_bigtech_internships;1875
+487;2026-09-05 11:02:17;ML про, ML старт;2;14950.0;ord_0506;usr_0487;True;camp_bigtech_internships;1878
+488;2026-08-09 16:36:09;Алгоритмы;1;19350.0;ord_0507;usr_0488;False;camp_start_discount_55;1836
+489;2026-08-24 08:47:25;ML старт;1;8850.0;ord_0508;usr_0489;False;camp_pro_ai_ml;1859
+490;2026-09-04 10:01:44;AI агенты;1;8450.0;ord_0509;usr_0490;False;camp_bigtech_internships;1878
+491;2026-09-07 09:04:54;Аналитика про;1;8950.0;ord_0510;usr_0491;False;camp_free_analytics_nosql;1887
+492;2026-08-20 14:21:52;Теория вероятностей;1;9950.0;ord_0511;usr_0492;False;camp_warmup;1856
+493;2026-09-02 16:44:53;Линейная алгебра;1;9950.0;ord_0512;usr_0493;False;camp_bigtech_internships;1875
+494;2026-09-05 19:15:54;Алгоритмы про;1;8959.0;ord_0513;usr_0494;False;camp_bigtech_internships;1878
+495;2026-09-01 10:30:21;ML про, ML старт;2;14950.0;ord_0514;usr_0495;True;camp_bigtech_internships;1875
+496;2026-08-22 15:01:37;ML старт;1;8950.0;ord_0515;usr_0496;False;camp_pro_ai_ml;1859
+497;2026-08-31 12:11:14;Backend про;1;8950.0;ord_0516;usr_0497;False;camp_bigtech_internships;1872
+498;2026-08-10 18:10:53;Аналитика про, Аналитика старт;2;9000.0;ord_0517;usr_0498;True;camp_start_discount_55;1838
+499;2026-09-08 13:24:34;Аналитика про;1;8950.0;ord_0518;usr_0499;False;camp_free_analytics_nosql;1893
+500;2026-08-10 13:21:01;Аналитика старт;1;6490.0;ord_0519;usr_0500;False;camp_start_discount_55;1837
+501;2026-08-20 14:06:32;ML старт;1;8745.0;ord_0520;usr_0501;False;camp_warmup;1856
+502;2026-09-05 10:11:25;ML про;1;8450.0;ord_0521;usr_0502;False;camp_bigtech_internships;1878
+503;2026-08-31 14:40:32;Аналитика про, Аналитика старт;2;14943.0;ord_0522;usr_0503;True;camp_bigtech_internships;1872
+504;2026-09-03 06:27:49;Аналитика старт;1;5975.0;ord_0523;usr_0504;False;camp_bigtech_internships;1877
+505;2026-08-11 18:00:05;ML старт, Алгоритмы старт;2;9900.0;ord_0524;usr_0505;True;camp_start_discount_55;1840
+506;2026-08-27 12:29:06;AI агенты;1;8950.0;ord_0525;usr_0506;False;camp_pro_ai_ml;1869
+507;2026-08-08 20:12:46;ML старт;1;6490.0;ord_0526;usr_0507;False;camp_start_discount_55;1833
+508;2026-08-09 21:33:27;Backend старт, Алгоритмы старт;2;9900.0;ord_0527;usr_0508;True;camp_start_discount_55;1837
+508;2026-09-03 08:29:32;Backend про;1;5750.0;ord_0528;usr_0508;False;camp_bigtech_internships;1877
+509;2026-09-07 16:51:31;Теория вероятностей;1;18900.0;ord_0529;usr_0509;False;camp_free_analytics_nosql;1887
+510;2026-09-05 10:34:42;AI агенты;1;8950.0;ord_0530;usr_0510;False;camp_bigtech_internships;1878
+511;2026-08-08 17:29:42;Аналитика старт;1;4950.0;ord_0531;usr_0511;False;camp_start_discount_55;1833
+512;2026-08-08 16:43:12;Алгоритмы старт;1;4995.0;ord_0532;usr_0512;False;camp_start_discount_55;1833
+513;2026-08-23 17:34:10;AI агенты, Алгоритмы про;2;13950.0;ord_0533;usr_0513;True;camp_pro_ai_ml;1859
+514;2026-08-23 09:48:08;ML старт;1;8950.0;ord_0534;usr_0514;False;camp_pro_ai_ml;1859
+515;2026-09-05 12:09:36;Аналитика про;1;8450.0;ord_0535;usr_0515;False;camp_bigtech_internships;1878
+516;2026-08-08 16:59:49;Алгоритмы старт, Аналитика старт;2;9900.0;ord_0536;usr_0516;True;camp_start_discount_55;1833
+517;2026-09-05 12:48:03;Аналитика про;1;8950.0;ord_0537;usr_0517;False;camp_bigtech_internships;1878
+518;2026-08-08 12:37:37;Алгоритмы старт;1;6490.0;ord_0538;usr_0518;False;camp_start_discount_55;1833
+519;2026-08-10 16:09:27;Алгоритмы старт, Аналитика про, Аналитика старт;3;14850.0;ord_0539;usr_0519;True;camp_start_discount_55;1837
+520;2026-08-09 09:27:27;Аналитика старт;1;6490.0;ord_0540;usr_0520;False;camp_start_discount_55;1833
+521;2026-08-12 14:21:51;К ВУЗу;1;6450.0;ord_0541;usr_0521;False;camp_warmup;1843
+522;2026-08-17 16:24:17;К ВУЗу;1;6950.0;ord_0542;usr_0522;False;camp_warmup;1853
+523;2026-09-02 11:00:48;Backend про;1;8450.0;ord_0543;usr_0523;False;camp_bigtech_internships;1875
+524;2026-09-01 11:54:01;Аналитика про;1;8945.0;ord_0544;usr_0524;False;camp_bigtech_internships;1875
+525;2026-08-22 15:39:49;Аналитика старт;1;8950.0;ord_0545;usr_0525;False;camp_pro_ai_ml;1859
+526;2026-08-27 13:32:56;AI агенты;1;8950.0;ord_0546;usr_0526;False;camp_pro_ai_ml;1869
+527;2026-08-09 10:49:47;ML старт, Алгоритмы старт;2;9900.0;ord_0547;usr_0527;True;camp_start_discount_55;1833
+528;2026-09-06 16:54:20;ML про;1;8950.0;ord_0548;usr_0528;False;camp_bigtech_internships;1881
+529;2026-08-24 13:11:03;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0549;usr_0529;True;camp_pro_ai_ml;1859
+530;2026-09-06 19:09:38;Аналитика про;1;8950.0;ord_0550;usr_0530;False;camp_bigtech_internships;1882
+531;2026-08-30 10:04:17;Backend старт;1;8950.0;ord_0551;usr_0531;False;camp_pro_ai_ml;1869
+532;2026-08-08 16:22:47;Аналитика про, Аналитика старт;2;9990.0;ord_0552;usr_0532;True;camp_start_discount_55;1833
+533;2026-09-05 10:24:14;AI агенты;1;8450.0;ord_0553;usr_0533;False;camp_bigtech_internships;1878
+534;2026-08-30 12:55:04;AI агенты;1;8450.0;ord_0554;usr_0534;False;camp_pro_ai_ml;1869
+535;2026-08-30 08:24:30;Backend старт, Алгоритмы старт;2;14950.0;ord_0555;usr_0535;True;camp_pro_ai_ml;1869
+536;2026-08-12 12:22:52;Аналитика про, Аналитика старт;2;16950.0;ord_0556;usr_0536;True;camp_warmup;1843
+537;2026-08-12 04:49:43;ML старт, Алгоритмы старт;2;9900.0;ord_0557;usr_0537;True;camp_warmup;1843
+538;2026-08-31 06:14:52;Backend старт, Алгоритмы старт;2;14950.0;ord_0558;usr_0538;True;camp_bigtech_internships;1872
+539;2026-08-23 20:55:41;AI агенты;1;8950.0;ord_0559;usr_0539;False;camp_pro_ai_ml;1859
+540;2026-09-05 14:57:41;Аналитика про;1;8950.0;ord_0560;usr_0540;False;camp_bigtech_internships;1878
+541;2026-09-02 10:48:17;Алгоритмы старт, Аналитика старт;2;14950.0;ord_0561;usr_0541;True;camp_bigtech_internships;1875
+542;2026-08-23 18:26:56;Backend старт;1;8950.0;ord_0562;usr_0542;False;camp_pro_ai_ml;1859
+543;2026-08-09 14:01:24;Алгоритмы старт;1;4950.0;ord_0563;usr_0543;False;camp_start_discount_55;1836
+544;2026-08-10 06:26:01;Алгоритмы;1;4995.0;ord_0564;usr_0544;False;camp_start_discount_55;1837
+545;2026-09-05 19:45:17;ML про;1;8950.0;ord_0565;usr_0545;False;camp_bigtech_internships;1878
+546;2026-08-10 19:07:51;Аналитика старт;1;6490.0;ord_0566;usr_0546;False;camp_start_discount_55;1838
+547;2026-09-01 15:53:22;Backend про, Алгоритмы про;2;14950.0;ord_0567;usr_0547;True;camp_bigtech_internships;1875
+548;2026-09-08 12:45:32;AI агенты, ML про;2;13950.0;ord_0568;usr_0548;True;camp_free_analytics_nosql;1893
+549;2026-08-24 05:25:17;AI агенты, Backend про;2;16445.0;ord_0569;usr_0549;True;camp_pro_ai_ml;1859
+550;2026-08-09 16:24:42;Алгоритмы старт;1;5463.34;ord_0570;usr_0550;False;camp_start_discount_55;1836
+551;2026-09-02 09:58:19;Backend про;1;8950.0;ord_0571;usr_0551;False;camp_bigtech_internships;1875
+552;2026-08-26 04:37:12;Аналитика про;1;7475.0;ord_0572;usr_0552;False;camp_pro_ai_ml;1859
+553;2026-09-05 18:27:14;ML про;1;8950.0;ord_0573;usr_0553;False;camp_bigtech_internships;1878
+554;2026-08-08 12:44:01;ML старт, Алгоритмы старт;2;10000.0;ord_0574;usr_0554;True;camp_start_discount_55;1833
+555;2026-09-02 09:38:46;Алгоритмы про, Алгоритмы старт;2;14950.0;ord_0575;usr_0555;True;camp_bigtech_internships;1875
+556;2026-09-05 15:17:14;Аналитика про;1;7475.0;ord_0576;usr_0556;False;camp_bigtech_internships;1878
+557;2026-08-23 16:56:11;ML про;1;8950.0;ord_0577;usr_0557;False;camp_pro_ai_ml;1859
+558;2026-09-02 08:49:58;Линейная алгебра;1;8245.0;ord_0578;usr_0558;False;camp_bigtech_internships;1875
+559;2026-08-23 04:11:37;Алгоритмы;1;8450.0;ord_0579;usr_0559;False;camp_pro_ai_ml;1859
+560;2026-08-25 14:09:51;AI агенты;1;8950.0;ord_0580;usr_0560;False;camp_pro_ai_ml;1859
+561;2026-09-03 18:55:28;Теория вероятностей;1;18900.0;ord_0581;usr_0561;False;camp_bigtech_internships;1877
+562;2026-08-17 22:34:23;ML старт;1;8745.0;ord_0582;usr_0562;False;camp_warmup;1854
+563;2026-08-09 17:28:24;Аналитика старт;1;6490.0;ord_0583;usr_0563;False;camp_start_discount_55;1836
+564;2026-08-16 04:38:14;Аналитика старт;1;8745.0;ord_0584;usr_0564;False;camp_warmup;1848
+565;2026-08-30 15:30:24;Алгоритмы про, Алгоритмы старт;2;13950.0;ord_0585;usr_0565;True;camp_pro_ai_ml;1869
+566;2026-08-30 18:45:42;ML про;1;8450.0;ord_0586;usr_0566;False;camp_pro_ai_ml;1874
+567;2026-09-09 15:06:26;AI агенты, Алгоритмы про;2;14950.0;ord_0587;usr_0567;True;camp_free_analytics_nosql;1893
+568;2026-08-27 15:10:07;ML старт, Аналитика про;2;14950.0;ord_0588;usr_0568;True;camp_pro_ai_ml;1869
+569;2026-09-06 08:00:03;Backend про;1;8950.0;ord_0589;usr_0569;False;camp_bigtech_internships;1878
+570;2026-08-09 09:24:57;Алгоритмы старт, Аналитика старт;2;9990.0;ord_0590;usr_0570;True;camp_start_discount_55;1833
+571;2026-08-04 17:19:52;ML про, ML старт;2;16950.0;ord_0591;usr_0571;True;camp_warmup;1876
+572;2026-09-02 14:54:22;Аналитика про;1;8945.0;ord_0592;usr_0572;False;camp_bigtech_internships;1875
+573;2026-08-30 09:39:42;AI агенты;1;8950.0;ord_0593;usr_0573;False;camp_pro_ai_ml;1869
+574;2026-09-04 16:29:01;ML про;1;7475.0;ord_0594;usr_0574;False;camp_bigtech_internships;1878
+575;2026-08-19 09:21:46;Алгоритмы старт, Аналитика про, Аналитика старт;3;24735.0;ord_0595;usr_0575;True;camp_warmup;1855
+576;2026-09-04 17:26:34;ML старт;1;7475.0;ord_0596;usr_0576;False;camp_bigtech_internships;1878
+577;2026-08-09 16:26:30;Backend старт;1;5463.33;ord_0597;usr_0577;False;camp_start_discount_55;1836
+578;2026-08-21 12:29:55;Аналитика про;1;8245.0;ord_0598;usr_0578;False;camp_warmup;1857
+579;2026-08-06 16:20:47;ML старт;1;8245.0;ord_0599;usr_0579;False;camp_warmup;1830
+580;2026-08-23 14:38:29;AI агенты;1;8950.0;ord_0600;usr_0580;False;camp_pro_ai_ml;1859
+581;2026-08-23 11:19:47;ML про;1;8950.0;ord_0601;usr_0581;False;camp_pro_ai_ml;1859
+582;2026-09-04 15:03:52;Аналитика старт;1;8950.0;ord_0602;usr_0582;False;camp_bigtech_internships;1878
+583;2026-08-25 04:27:38;AI агенты;1;8950.0;ord_0603;usr_0583;False;camp_pro_ai_ml;1859
+584;2026-08-10 15:33:39;Алгоритмы старт;1;6490.0;ord_0604;usr_0584;False;camp_start_discount_55;1837
+585;2026-08-29 19:40:39;AI агенты, ML про;2;13950.0;ord_0605;usr_0585;True;camp_pro_ai_ml;1869
+586;2026-08-12 17:45:53;Аналитика старт;1;8745.0;ord_0606;usr_0586;False;camp_warmup;1843
+587;2026-08-26 21:47:21;AI агенты;1;8450.0;ord_0607;usr_0587;False;camp_pro_ai_ml;1869
+588;2026-08-11 02:43:57;К ВУЗу;1;6450.0;ord_0608;usr_0588;False;camp_start_discount_55;1840
+589;2026-08-09 18:06:31;Алгоритмы старт;1;5990.0;ord_0609;usr_0589;False;camp_start_discount_55;1836
+590;2026-09-04 11:04:11;Backend про;1;8945.0;ord_0610;usr_0590;False;camp_bigtech_internships;1878
+591;2026-09-05 10:13:46;AI агенты;1;8450.0;ord_0611;usr_0591;False;camp_bigtech_internships;1878
+592;2026-08-19 20:38:02;Алгоритмы старт;1;8245.0;ord_0612;usr_0592;False;camp_warmup;1856
+593;2026-09-06 19:53:15;Мат анализ;1;9950.0;ord_0613;usr_0593;False;camp_bigtech_internships;1882
+594;2026-09-03 18:16:38;AI агенты;1;5000.0;ord_0614;usr_0594;False;camp_bigtech_internships;1877
+595;2026-08-22 16:55:59;AI агенты, ML про;2;14950.0;ord_0615;usr_0595;True;camp_pro_ai_ml;1859
+596;2026-09-05 16:26:36;ML про;1;8950.0;ord_0616;usr_0596;False;camp_bigtech_internships;1878
+597;2026-08-09 18:00:04;ML старт;1;5990.0;ord_0617;usr_0597;False;camp_start_discount_55;1836
+598;2026-08-09 09:43:34;Backend старт, Алгоритмы;2;9900.0;ord_0618;usr_0598;True;camp_start_discount_55;1833
+599;2026-08-26 12:25:10;Аналитика старт;1;8950.0;ord_0619;usr_0599;False;camp_pro_ai_ml;1859
+599;2026-08-31 16:05:26;Аналитика про;1;8950.0;ord_0620;usr_0599;False;camp_bigtech_internships;1872
+600;2026-08-22 15:48:13;AI агенты;1;7450.0;ord_0621;usr_0600;False;camp_pro_ai_ml;1859
+601;2026-09-04 04:51:49;AI агенты, ML про, ML старт;3;22425.0;ord_0622;usr_0601;True;camp_bigtech_internships;1878
+601;2026-09-06 14:28:33;Аналитика про, Аналитика старт;2;13950.0;ord_0623;usr_0601;True;camp_bigtech_internships;1880
+602;2026-09-05 17:42:39;Backend про;1;8450.0;ord_0624;usr_0602;False;camp_bigtech_internships;1878
+603;2026-08-18 16:34:39;Аналитика старт;1;8745.0;ord_0625;usr_0603;False;camp_warmup;1854
+604;2026-09-06 19:17:57;Аналитика старт;1;8950.0;ord_0626;usr_0604;False;camp_bigtech_internships;1882
+605;2026-08-26 07:26:53;Алгоритмы про;1;8950.0;ord_0627;usr_0605;False;camp_pro_ai_ml;1859
+606;2026-08-10 18:36:00;К ВУЗу;1;6450.0;ord_0628;usr_0606;False;camp_start_discount_55;1838

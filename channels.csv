@@ -1,0 +1,10 @@
+﻿channel_id;channel_name;channel_type;is_external;description
+ch_postupashki_main;Поступашки - Вакансии, Мемы, Задачи;own_media;False;Основной TG-канал
+ch_data_new_gold;data_new_gold;external_ad;True;Сторонний Data/AI канал для посевов
+ch_ds_tasks_shad;Задачи DS - Собеседования, Соревнования, ШАД;own_network;False;Сателлит DS/ШАД
+ch_postupach;Поступач;own_network;False;Студенческий мемный сателлит
+ch_math_shad;Матеша — ШАД;own_network;False;Сателлит по высшей математике
+ch_chad_protocol;Chad Protocol - карьера, IT, успех;own_network;False;Карьерный сателлит
+ch_algo_shad;Алгоритмы - Собеседования, Олимпиады, ШАД;own_network;False;Сателлит по алгоритмам
+ch_art_of_code;Art of Code;own_network;False;Сателлит по разработке/бэкенду
+ch_postupashki_olympiads;Поступашки - Олимпиады, ЕГЭ, ДВИ;own_network;False;Сателлит для олимпиадников и абитуриентов

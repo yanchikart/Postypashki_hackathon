@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Поступашки — Маркетинговая BI-система и Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-page: #F7F5F0;
+      --card-bg: #FFFFFF;
+      --brand-red: #8B263E;
+      --brand-red-hover: #731F33;
+      --brand-red-soft: #F9ECEF;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border-color: #E5E1D8;
+      --green: #15803D;
+      --green-soft: #DCFCE7;
+      --gold: #D97706;
+      --gold-soft: #FEF3C7;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body { background-color: var(--bg-page); color: var(--text-main); padding-bottom: 40px; }
+    .container { max-width: 680px; margin: 0 auto; padding: 14px; }
+
+    /* Top Brand Header */
+    .brand-header {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 12px;
+    }
+    .brand-left { display: flex; align-items: center; gap: 10px; }
+    .brand-logo-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--brand-red); display: inline-block; }
+    .brand-name { font-weight: 800; font-size: 16px; color: var(--text-main); }
+    .role-badge { padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; }
+    .role-badge-admin { background: var(--brand-red-soft); color: var(--brand-red); border: 1px solid var(--brand-red); }
+    .role-badge-student { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+
+    /* Role Switcher Bar */
+    .demo-bar {
+      background: #ECE8E0;
+      border-radius: 12px;
+      padding: 6px 12px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      border: 1px dashed #D1CBBF;
+    }
+    .demo-select {
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background: #fff;
+      font-weight: 700;
+      color: var(--brand-red);
+      font-size: 11px;
+    }
+
+    /* Admin Navigation Tabs (Only 2 Main Tabs) */
+    .admin-nav {
+      display: flex;
+      background: #ECE8E0;
+      border-radius: 100px;
+      padding: 4px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border-color);
+    }
+    .nav-btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 100px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .nav-btn.active {
+      background: #FFFFFF;
+      color: var(--brand-red);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Cards & Container */
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-main);
+    }
+    .card-subtitle { font-size: 12.5px; color: var(--text-muted); line-height: 1.45; margin-bottom: 14px; }
+
+    /* Table styles */
+    .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .data-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 520px; }
+    .data-table th { text-align: left; padding: 8px 6px; color: var(--text-muted); font-size: 10px; text-transform: uppercase; border-bottom: 1px solid var(--border-color); background: #FAF8F5; }
+    .data-table td { padding: 8px 6px; border-bottom: 1px solid #F0ECE4; color: var(--text-main); }
+    .tag { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 700; }
+    .tag-red { background: var(--brand-red-soft); color: var(--brand-red); }
+    .tag-green { background: var(--green-soft); color: var(--green); }
+    .tag-gold { background: var(--gold-soft); color: #B45309; }
+    .tag-gray { background: #E2E8F0; color: #475569; }
+
+    /* Engine Card */
+    .engine-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--brand-red-soft) 100%);
+      border: 2px solid var(--brand-red);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-md);
+    }
+    .engine-title { font-size: 17px; font-weight: 900; color: var(--brand-red); margin-bottom: 6px; }
+    .engine-desc { font-size: 12.5px; color: #5A1E2D; line-height: 1.45; margin-bottom: 12px; }
+
+    .input-wrapper { display: flex; gap: 8px; margin-bottom: 10px; }
+    .budget-input {
+      flex: 1;
+      padding: 12px 14px;
+      font-size: 17px;
+      font-weight: 800;
+      border-radius: 12px;
+      border: 1.5px solid var(--brand-red);
+      background: #FFFFFF;
+      color: var(--text-main);
+      outline: none;
+    }
+    .btn-red {
+      padding: 12px 18px;
+      background: var(--brand-red);
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .btn-red:hover { background: var(--brand-red-hover); }
+
+    .presets-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .preset-chip {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--brand-red);
+    }
+    .preset-chip:hover { background: var(--brand-red); color: #fff; }
+
+    .prediction-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+    .pred-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+    .pred-label { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+    .pred-val-big { font-size: 20px; font-weight: 900; color: var(--green); }
+    .pred-val-sub { font-size: 13px; font-weight: 700; color: var(--brand-red); }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .metric-card {
+      background: #FAF8F5;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+    .metric-card-label { font-size: 10.5px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 2px; }
+    .metric-card-val { font-size: 17px; font-weight: 800; color: var(--text-main); }
+    .metric-card-sub { font-size: 11px; font-weight: 700; color: var(--green); margin-top: 2px; }
+
+    /* Funnel component */
+    .funnel-step {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      background: #FAF8F5;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    /* Student offer banner */
+    .banner-offer {
+      background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
+      border: 1.5px dashed var(--brand-red);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .banner-offer h3 { font-size: 16px; font-weight: 800; color: var(--brand-red); margin-bottom: 6px; }
+    .banner-offer p { font-size: 13px; color: #4C0519; line-height: 1.45; }
+
+    .form-group { margin-bottom: 12px; }
+    .form-label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; color: var(--text-main); }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      font-size: 14px;
+      outline: none;
+      background: #FFFFFF;
+    }
+    .form-control:focus { border-color: var(--brand-red); }
+
+    details {
+      margin-top: 14px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+    summary { font-weight: 700; color: var(--text-muted); cursor: pointer; user-select: none; }
+    summary:hover { color: var(--brand-red); }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Brand Header -->
+    <div class="brand-header">
+      <div class="brand-left">
+        <span class="brand-logo-dot"></span>
+        <span class="brand-name">Поступашки BI</span>
+      </div>
+      <div id="roleBadge" class="role-badge role-badge-admin">Режим: Маркетолог</div>
+    </div>
+
+    <!-- Mode Switcher (Admin vs Student) -->
+    <div class="demo-bar">
+      <span>⚙️ Роль интерфейса:</span>
+      <select class="demo-select" id="roleSelector" onchange="switchMainMode(this.value)">
+        <option value="admin">Панель управления (Маркетолог / Фаундер)</option>
+        <option value="student">Клиентский экран (Студент из поста)</option>
+      </select>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!--                                1. РЕЖИМ АДМИНА                             -->
+    <!-- ========================================================================= -->
+    <div id="adminContainer">
+      
+      <!-- 2 Главные вкладки: Оптимизатор и Маркетинговая аналитика -->
+      <div class="admin-nav">
+        <button class="nav-btn active" onclick="switchAdminNav('optimizer')">
+          <span>🤖 Оптимизатор бюджета</span>
+        </button>
+        <button class="nav-btn" onclick="switchAdminNav('analytics')">
+          <span>📊 Маркетинговая аналитика</span>
+        </button>
+      </div>
+
+      <!-- Вкладка 1: Оптимизатор бюджета -->
+      <div id="view-optimizer">
+        <div class="engine-card">
+          <div class="engine-title">«У меня есть бюджет на запуск. Что мне делать?»</div>
+          <div class="engine-desc">
+            Оптимизатор предельного ROMI (Knapsack) за вычетом органического фона (54 482.50 ₽/день). Введите сумму:
+          </div>
+
+          <div class="input-wrapper">
+            <input type="number" id="budgetInput" class="budget-input" value="300000" step="10000">
+            <button class="btn-red" onclick="runOptimization()">Рассчитать</button>
+          </div>
+
+          <div class="presets-row">
+            <span class="preset-chip" onclick="setBudget(150000)">150 000 ₽</span>
+            <span class="preset-chip" onclick="setBudget(300000)">300 000 ₽ (Кейс)</span>
+            <span class="preset-chip" onclick="setBudget(500000)">500 000 ₽</span>
+            <span class="preset-chip" onclick="setBudget(1000000)">1 000 000 ₽</span>
+          </div>
+
+          <div class="prediction-box">
+            <div class="pred-row">
+              <span class="pred-label">Прогноз чистой прибыли:</span>
+              <span class="pred-val-big" id="predProfit">+3 848 843 ₽</span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">Инкрементальная выручка:</span>
+              <span class="pred-val-sub" id="predRevenue">4 148 843 ₽</span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">Итоговый инкрементальный ROMI:</span>
+              <span class="pred-val-sub" id="predRomi" style="color:var(--green);">+1 283%</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="data-table" style="min-width: 100%;">
+                <thead>
+                  <tr>
+                    <th>Направление</th>
+                    <th>Бюджет</th>
+                    <th>Доля</th>
+                    <th>Отдача</th>
+                    <th>Роль</th>
+                  </tr>
+                </thead>
+                <tbody id="splitTableBody"></tbody>
+              </table>
+            </div>
+
+            <div id="decisionNarrative" style="margin-top:12px; font-size:12px; color:#78350F; background:var(--gold-soft); border:1px solid #FCD34D; padding:12px; border-radius:10px; line-height:1.45;">
+              Загрузка решения...
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>График валового и чистого ROMI</span>
+            <span style="font-size:11px; font-weight:700; color:var(--brand-red);">base.xlsx (628 заказов)</span>
+          </div>
+          <canvas id="romiChart" height="180"></canvas>
+        </div>
+      </div>
+
+      <!-- Вкладка 2: Маркетинговая аналитика (Все объединенные блоки) -->
+      <div id="view-analytics" class="hidden">
+        
+        <!-- Сводные метрики бизнеса -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-card-label">Выручка (Касса)</div>
+            <div class="metric-card-val">5 904 671 ₽</div>
+            <div class="metric-card-sub">628 заказов (606 студ.)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card-label">Чистый ROMI_inc</div>
+            <div class="metric-card-val" style="color:var(--green);">+1 146%</div>
+            <div class="metric-card-sub">+3.66M ₽ сверх фона</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card-label">Средний чек (AOV)</div>
+            <div class="metric-card-val">9 402 ₽</div>
+            <div class="metric-card-sub">153 бандла (24.4%)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-card-label">Органический фон</div>
+            <div class="metric-card-val">54 483 ₽/д</div>
+            <div class="metric-card-sub" style="color:var(--text-muted);">Естественный Holdout</div>
+          </div>
+        </div>
+
+        <!-- 1. Динамика продаж по времени с наложением событий (Event Overlay) -->
+        <div class="card">
+          <div class="card-title">
+            <span>Динамика продаж с наложением промо-событий</span>
+            <span class="tag tag-green">Дневная касса</span>
+          </div>
+          <div class="card-subtitle">
+            Всплески выручки относительно фонового плато 54.5k ₽/день при выходе ключевых постов:
+          </div>
+          <canvas id="dailyDynamicsChart" height="210"></canvas>
+          <div style="margin-top:10px; font-size:11px; color:#475569; background:#F8FAFC; border:1px solid #E2E8F0; padding:10px; border-radius:8px; line-height:1.5;">
+            📍 <strong>Метки событий:</strong> 09 авг — пик распродажи СТАРТ -55% (524k ₽) • 23 авг — запуск AI/ML ПРО (394k ₽) • 05-06 сен — дедлайн отборов Т-Банка (485k ₽/день).
+          </div>
+        </div>
+
+        <!-- 2. Сводная таблица ROMI Кампаний (dm_campaigns_performance) -->
+        <div class="card">
+          <div class="card-title">
+            <span>Эффективность кампаний (dm_campaigns_performance)</span>
+            <span class="tag tag-red">Last-Touch 21d</span>
+          </div>
+          <div class="card-subtitle">
+            Инкрементальный ROMI очищен от фоновых продаж (Задачи 6, 7):
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Кампания</th>
+                  <th>Бюджет</th>
+                  <th>Заказы</th>
+                  <th>Выручка</th>
+                  <th>Чек (AOV)</th>
+                  <th>ROMI_attr</th>
+                  <th>ROMI_inc</th>
+                  <th>Отдача</th>
+                </tr>
+              </thead>
+              <tbody id="dmTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 3. Разбивка по продуктам и направлениям (Product Breakdown) -->
+        <div class="card">
+          <div class="card-title">
+            <span>Структура выручки по направлениям курсов</span>
+            <span class="tag tag-gold">Product Mix</span>
+          </div>
+          <div class="card-subtitle">
+            Бандлы (комплекты) и флагманы ПРО обеспечивают более 68% совокупного денежного потока:
+          </div>
+          <canvas id="productChart" height="190"></canvas>
+          <div class="table-responsive" style="margin-top:12px;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Направление</th>
+                  <th>Заказы</th>
+                  <th>Касса</th>
+                  <th>Доля</th>
+                  <th>Роль в портфеле</th>
+                </tr>
+              </thead>
+              <tbody id="productTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 4. Воронка конверсии и Когорты LTV -->
+        <div class="card">
+          <div class="card-title">
+            <span>Сквозная воронка и удержание (Funnel & Cohorts)</span>
+          </div>
+          <div style="margin-bottom:12px;">
+            <div class="funnel-step">
+              <span>👁 1. Охват постов Telegram (Views)</span>
+              <strong>180 800 просмотров</strong>
+            </div>
+            <div class="funnel-step">
+              <span>👆 2. Клики и заявки в Mini App (CR = 0.35%)</span>
+              <strong>628 лидов</strong>
+            </div>
+            <div class="funnel-step" style="background:var(--green-soft); border:1px solid var(--green);">
+              <span style="color:var(--green); font-weight:700;">💳 3. Оплаты курсов (606 уникальных студ.)</span>
+              <strong style="color:var(--green);">628 оплат (5.9M ₽)</strong>
+            </div>
+          </div>
+          <div style="font-size:12px; color:#475569; line-height:1.5;">
+            • <strong>CAC (стоимость покупателя)</strong>: 477.70 ₽ при среднем чеке 9 402 ₽.<br>
+            • <strong>Повторные покупки (LTV)</strong>: 5.2% студентов купили 2+ курса в окне 21 день.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================================================================= -->
+    <!--                                2. РЕЖИМ СТУДЕНТА                           -->
+    <!-- ========================================================================= -->
+    <div id="studentContainer" class="hidden">
+      <div class="banner-offer">
+        <h3>🎁 Материалы отбора в BigTech открыты!</h3>
+        <p>Вы перешли из поста с разбором контеста. Введите свой email, чтобы привязать персональную скидку 15% и получить доступ к материалам.</p>
+      </div>
+
+      <div class="card" id="studentFormCard">
+        <div class="card-title">
+          <span>Получить разбор и персональный оффер</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Ваш Email (для личного кабинета):</label>
+          <input type="email" id="studentEmail" class="form-control" value="student_104@mail.ru" placeholder="name@edu.hse.ru">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Интересующая программа подготовки:</label>
+          <select class="form-control" id="targetCourse">
+            <option>Data Science & ML (ПРО) — 8 950 ₽</option>
+            <option>Продуктовая аналитика (СТАРТ) — 8 950 ₽</option>
+            <option>Алгоритмы и структуры данных — 8 950 ₽</option>
+          </select>
+        </div>
+
+        <button class="btn-red" style="width:100%;" onclick="submitStudentStitch()">
+          Активировать доступ и скидку 15%
+        </button>
+      </div>
+
+      <!-- Экран успешной активации для СТУДЕНТА (ТОЛЬКО КНОПКА МЕНЕДЖЕРА) -->
+      <div id="studentSuccessCard" class="card hidden">
+        <div style="text-align: center; padding: 10px 0;">
+          <div style="font-size: 40px; margin-bottom: 8px;">🎉</div>
+          <h2 style="font-size: 19px; color: var(--green); margin-bottom: 6px;">Доступ и скидка активированы!</h2>
+          <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px;">
+            Разбор контеста и промокод на скидку 15% отправлены на <strong id="displayEmail">student_104@mail.ru</strong>.
+          </p>
+
+          <div>
+            <!-- Единственное целевое действие студента -->
+            <a href="https://t.me/postupashki_support" target="_blank" class="btn-red" style="width:100%; font-size:15px; padding:14px;">
+              💬 Написать менеджеру по курсу в Telegram
+            </a>
+          </div>
+        </div>
+
+        <!-- Свернутая панель для жюри -->
+         
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const tg = window.Telegram?.WebApp;
+    if (tg) { tg.expand(); tg.ready(); }
+
+    const CAMPAIGNS_PERF = [
+      { name: 'BigTech стажировки', bgt: 90000, orders: 201, rev: 1981092, aov: 9856, romi_attr: 2101.2, romi_inc: 1677.5, mult: 17.77 },
+      { name: 'Флагманы ПРО & AI', bgt: 120000, orders: 153, rev: 1524933, aov: 9967, romi_attr: 1170.8, romi_inc: 762.2, mult: 8.62 },
+      { name: 'Распродажа СТАРТ -55%', bgt: 45000, orders: 144, rev: 1101027, aov: 7646, romi_attr: 2346.7, romi_inc: 1741.4, mult: 18.41 },
+      { name: 'Лид-магнит (NoSQL)', bgt: 30000, orders: 40, rev: 441675, aov: 11042, romi_attr: 1372.2, romi_inc: 645.8, mult: 7.46 },
+      { name: 'Прогревы и бренд', bgt: 15000, orders: 90, rev: 855945, aov: 9511, romi_attr: 5606.3, romi_inc: 0.0, mult: 0.0 }
+    ];
+
+    const PRODUCT_BREAKDOWN = [
+      { name: 'Бандлы (комплекты курсов)', orders: 153, rev: 2119033, share: '35.9%', role: 'Драйвер среднего чека (AOV)' },
+      { name: 'Флагманы ПРО & AI-агенты', orders: 231, rev: 1918062, share: '32.5%', role: 'Высокомаржинальное ядро' },
+      { name: 'Линейка СТАРТ (-55%)', orders: 150, rev: 1074582, share: '18.2%', role: 'Массовый объем эконом-сегмента' },
+      { name: 'Специализации и интенсивы', orders: 94, rev: 792995, share: '13.4%', role: 'Аналитика вне SQL / Вспомогательные' }
+    ];
+
+    const DAILY_LABELS = ['08-04','08-05','08-06','08-07','08-08','08-09','08-10','08-11','08-12','08-13','08-14','08-15','08-16','08-17','08-18','08-19','08-20','08-21','08-22','08-23','08-24','08-25','08-26','08-27','08-28','08-29','08-30','08-31','09-01','09-02','09-03','09-04','09-05','09-06','09-07','09-08','09-09','09-10'];
+    const DAILY_REVENUE = [53700, 71600, 53700, 89500, 275015, 524092, 179000, 35800, 53700, 53700, 71600, 53700, 53700, 53700, 53700, 53700, 53700, 53700, 251150, 394495, 143200, 196900, 161100, 107400, 125300, 89500, 53700, 161100, 226880, 214800, 179000, 269585, 484684, 396075, 143200, 125300, 107400, 65775];
+
+    function renderAnalyticsTables() {
+      // 1. Performance Table
+      let perfHtml = '';
+      CAMPAIGNS_PERF.forEach(c => {
+        perfHtml += `<tr>
+          <td><strong>${c.name}</strong></td>
+          <td>${c.bgt.toLocaleString()} ₽</td>
+          <td>${c.orders}</td>
+          <td>${c.rev.toLocaleString()} ₽</td>
+          <td>${c.aov.toLocaleString()} ₽</td>
+          <td><span class="tag tag-red">+${c.romi_attr}%</span></td>
+          <td><span class="tag tag-green">+${c.romi_inc}%</span></td>
+          <td><strong>x${c.mult}</strong></td>
+        </tr>`;
+      });
+      document.getElementById('dmTableBody').innerHTML = perfHtml;
+
+      // 2. Product Breakdown Table
+      let prodHtml = '';
+      PRODUCT_BREAKDOWN.forEach(p => {
+        prodHtml += `<tr>
+          <td><strong>${p.name}</strong></td>
+          <td>${p.orders}</td>
+          <td>${p.rev.toLocaleString()} ₽</td>
+          <td><strong>${p.share}</strong></td>
+          <td><span class="tag tag-gray">${p.role}</span></td>
+        </tr>`;
+      });
+      document.getElementById('productTableBody').innerHTML = prodHtml;
+    }
+
+    // Role Switcher (Admin vs Student)
+    function switchMainMode(mode) {
+      document.getElementById('roleSelector').value = mode;
+      if (mode === 'admin') {
+        document.getElementById('adminContainer').classList.remove('hidden');
+        document.getElementById('studentContainer').classList.add('hidden');
+        document.getElementById('roleBadge').className = 'role-badge role-badge-admin';
+        document.getElementById('roleBadge').innerText = 'Режим: Маркетолог';
+      } else {
+        document.getElementById('adminContainer').classList.add('hidden');
+        document.getElementById('studentContainer').classList.remove('hidden');
+        document.getElementById('roleBadge').className = 'role-badge role-badge-student';
+        document.getElementById('roleBadge').innerText = 'Режим: Студент';
+      }
+    }
+
+    // Admin Subtabs: Optimizer vs Analytics
+    function switchAdminNav(tab) {
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      if (tab === 'optimizer') {
+        document.getElementById('view-optimizer').classList.remove('hidden');
+        document.getElementById('view-analytics').classList.add('hidden');
+      } else {
+        document.getElementById('view-optimizer').classList.add('hidden');
+        document.getElementById('view-analytics').classList.remove('hidden');
+      }
+    }
+
+    // Budget Optimizer Logic
+    function setBudget(v) {
+      document.getElementById('budgetInput').value = v;
+      runOptimization();
+    }
+
+    function runOptimization() {
+      const b = parseFloat(document.getElementById('budgetInput').value) || 300000;
+      const b_start = Math.min(b * 0.15, 60000);
+      const b_nosql = Math.max(b * 0.08, 15000);
+      const b_ext = Math.max(b * 0.04, 10000);
+      const rem = b - (b_start + b_nosql + b_ext);
+      const b_big = rem * 0.60;
+      const b_pro = rem * 0.40;
+
+      const incRev = (b_big * 17.7746) + (b_pro * 8.6216) + (b_start * 18.4136) + (b_nosql * 7.4582) + (b_ext * 4.20);
+      const profit = incRev - b;
+      const romi = (profit / b) * 100;
+
+      document.getElementById('predProfit').innerText = '+' + Math.round(profit).toLocaleString() + ' ₽';
+      document.getElementById('predRevenue').innerText = Math.round(incRev).toLocaleString() + ' ₽';
+      document.getElementById('predRomi').innerText = '+' + Math.round(romi).toLocaleString() + '%';
+
+      const split = [
+        { name: '1. BigTech стажировки', budget: Math.round(b_big), share: (b_big/b*100).toFixed(1)+'%', mult: 17.77, role: 'Scale Up (Флагман + DS)' },
+        { name: '2. Флагманы ПРО & AI', budget: Math.round(b_pro), share: (b_pro/b*100).toFixed(1)+'%', mult: 8.62, role: 'Cash Core (Чек 9 967 ₽)' },
+        { name: '3. Распродажа СТАРТ -55%', budget: Math.round(b_start), share: (b_start/b*100).toFixed(1)+'%', mult: 18.41, role: 'Cap (Лимит 1 раз/мес)' },
+        { name: '4. Лид-магниты NoSQL', budget: Math.round(b_nosql), share: (b_nosql/b*100).toFixed(1)+'%', mult: 7.46, role: 'ToFu Feed (Сбор базы)' },
+        { name: '5. Внешние посевы', budget: Math.round(b_ext), share: (b_ext/b*100).toFixed(1)+'%', mult: 4.20, role: 'Testing (data_new_gold)' }
+      ];
+
+      let rows = '';
+      split.forEach(s => {
+        rows += `<tr>
+          <td><strong>${s.name}</strong></td>
+          <td>${s.budget.toLocaleString()} ₽</td>
+          <td>${s.share}</td>
+          <td><strong>x${s.mult}</strong></td>
+          <td><span class="tag tag-gray">${s.role}</span></td>
+        </tr>`;
+      });
+      document.getElementById('splitTableBody').innerHTML = rows;
+
+      document.getElementById('decisionNarrative').innerHTML = 
+        `<strong>Вердикт BI-системы:</strong> BigTech получает ${split[0].share} бюджета благодаря отдаче x17.77 без предоставления скидок. Распродажа СТАРТ удерживается на лимите ${split[2].budget.toLocaleString()} ₽ во избежание выжигания базы.`;
+    }
+
+    function submitStudentStitch() {
+      const email = document.getElementById('studentEmail').value || 'student_104@mail.ru';
+      document.getElementById('displayEmail').innerText = email;
+      document.getElementById('studentFormCard').classList.add('hidden');
+      document.getElementById('studentSuccessCard').classList.remove('hidden');
+      if (tg && tg.HapticFeedback) tg.HapticFeedback.notificationOccurred('success');
+    }
+
+    // Инициализация
+    renderAnalyticsTables();
+    runOptimization();
+
+    // Chart 1: ROMI comparison
+    const ctx1 = document.getElementById('romiChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['BigTech', 'AI/ML ПРО', 'СТАРТ -55%', 'NoSQL', 'Прогревы'],
+        datasets: [
+          { label: 'Чистый ROMI_inc (%)', data: [1677.5, 762.2, 1741.4, 645.8, 0.0], backgroundColor: '#15803D', borderRadius: 4 },
+          { label: 'Валовый ROMI_attr (%)', data: [2101.2, 1170.8, 2346.7, 1372.2, 5606.3], backgroundColor: '#8B263E', borderRadius: 4 }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { labels: { font: { size: 10, weight: 'bold' } } } },
+        scales: { y: { grid: { color: '#E5E1D8' } } }
+      }
+    });
+
+    // Chart 2: Daily dynamics with Event Overlays
+    const ctx2 = document.getElementById('dailyDynamicsChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: DAILY_LABELS,
+        datasets: [
+          {
+            label: 'Выручка оплат по дням (₽)',
+            data: DAILY_REVENUE,
+            borderColor: '#8B263E',
+            backgroundColor: 'rgba(139, 38, 62, 0.08)',
+            borderWidth: 2,
+            fill: true,
+            tension: 0.25,
+            pointRadius: [0,0,0,0,3,6,3,0,0,0,0,0,0,0,0,0,0,0,3,6,0,0,0,0,0,0,0,0,3,0,0,4,7,6,0,0,0,0],
+            pointBackgroundColor: '#8B263E'
+          },
+          {
+            label: 'Органический фон (54 483 ₽/д)',
+            data: Array(DAILY_LABELS.length).fill(54483),
+            borderColor: '#15803D',
+            borderWidth: 1.5,
+            borderDash: [4, 4],
+            fill: false,
+            pointRadius: 0
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { font: { size: 10, weight: 'bold' } } }
+        },
+        scales: {
+          y: { ticks: { callback: v => v >= 1000 ? (v/1000) + 'k ₽' : v }, grid: { color: '#E5E1D8' } },
+          x: { ticks: { maxRotation: 45, minRotation: 45, font: { size: 9 } }, grid: { display: false } }
+        }
+      }
+    });
+
+    // Chart 3: Product Breakdown
+    const ctx3 = document.getElementById('productChart').getContext('2d');
+    new Chart(ctx3, {
+      type: 'doughnut',
+      data: {
+        labels: ['Бандлы (комплекты)', 'Флагманы ПРО & AI', 'Линейка СТАРТ (-55%)', 'Специализации'],
+        datasets: [{
+          data: [2119033, 1918062, 1074582, 792995],
+          backgroundColor: ['#8B263E', '#15803D', '#D97706', '#64748B']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom', labels: { font: { size: 11 } } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
